@@ -1,14 +1,15 @@
 Eduard Sergeev
 ==============
-Software Developer  
+**Software Developer**  
 **Sydney, Australia**  
-<eduard.sergeev@gmail.com>
+<eduard.sergeev@gmail.com>  
+[GitHub](https://github.com/EduardSergeev) [stackoverflow](https://stackoverflow.com/users/394253/edka) [LinkedIn](https://www.linkedin.com/in/eduardsergeev/)
 
 
 ## Summary
 * 15 years of .NET/C# (1.0-4.7) predominantly server-side development
-* Along with DBMS/SQL knowledge and experience: MSSQL, PostgreSQL
-* Keen interest and commercial experience in functional languages: Haskell, Erlang, J
+* Along with practical knowledge DBMS/SQL: MSSQL, PostgreSQL
+* Commercial experience with functional languages: Haskell, Erlang, J
 
 ---
 ## Experience
@@ -16,12 +17,12 @@ Software Developer
 
 ### [Cashrewards](http://www.cashrewards.com.au)
 Sydney, Australia  
-Senior .NET Developer (contractor)  
+Senior Software Developer (contractor)  
 August 2017 - October 2017
 
-Cashback online service for retail customers  
+Cashback service for retail customers  
 
-Was full stack developer for maintaining and development of company website and internal services
+Was full stack developer for maintaining and development of company website and internal services.
 
 * .NET/C# 4.5, MSSQL 2012, ASP.NET/MVC, AWS, Bitbucket
 
@@ -33,7 +34,7 @@ April 2017 - August 2017
 
 Software solutions for logistics industry
 
-Was responsible for software support and development in "Customs" and "Accounting" teams
+Was responsible for software support and development in "Customs" and "Accounting" teams.
 
 * .NET/C# 4.5, TFS
 
@@ -47,7 +48,7 @@ June 2015 - August 2016
 Big data analytics - massive-scale personalised marketing service
 
 Worked on infrastructure code: mostly Haskell codebase, microservices, cloud-based deployment (AWS).  
-Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end service for statistics storage and retrieval
+Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end service for statistics storage and retrieval.
 
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, git/github
 
@@ -59,8 +60,8 @@ July 2013 – May 2015
 
 Siemens Building Technologies - access control for buildings
 
-Participated in the development of Siemens' next generation of building Access Control system “Aliro”: .NET/SQL Server + Silverlight (as well as Android & iOS) clients and C++-based firmware for hardware access points.  
-Was responsible for server-side of the project (including DB).Subsequently worked in other areas of the system while project was pushed closer to release: stability, performance, security issues and general bug fixing
+Participated in the development of Siemens' next generation of building Access Control system “Aliro”: .NET/SQL Server + Silverlight UI and C++-based firmware for hardware access points.  
+Was responsible for server-side of the project (including DB). Subsequently worked in other areas of the system while project was pushed closer to release: stability, performance, security issues and general bug fixing.
 
 * .NET/C# 4.0, WCF, MSSQL 2008, EF, TPL, Unity, Wix, TFS
 
@@ -74,9 +75,9 @@ Non-governmental organisation focused on human rights
 
 Worked on modernisation of the IT (software) infrastructure   
 Set up and maintained proper software development environment (source control, CI, TDD)  
-Integrated internal CRM system with company website. Implemented two payment gateway services working with Westpac banking portals (Quickbatch and PayWay). Implemented a service for ongoing synchronisation between internal CRM and Campaign Monitor newsletter service. Integrated CMS with the external campaign website (developed by Saatchi) and was a technical point of contact for external vendors
+Integrated internal CRM system with company website. Implemented payment gateway service working with Westpac banking portal. Implemented synchronisation between internal CRM and Campaign Monitor. Integrated CMS with the external campaign website.
 
-* .NET 4.0/C#, WCF, MSSQL 2008, PHP, Erlang/OTP, git, TeamCity
+* .NET/C# 4.0, WCF, MSSQL 2008, PHP, Erlang/OTP, git, TeamCity
 
 ---
 ### [Barclays Capital](https://en.wikipedia.org/wiki/Barclays_Investment_Bank)
@@ -87,8 +88,8 @@ April 2010 – October 2010
 
 Investment bank, quantitative analytics team
 
-Was responsible for support and development of Functional Model Deployment (FMD) project as well as general support for QA library users (quants and IT).  
-FMD was a proprietary functional language written mostly in C++ and hosted in Excel. Worked mostly on improvements and bug-fixing in C# and VBA part of FMD plus minor optimisation and bug fixing in core (C++) FMD; Build support/improvement (TeamCity+NUnit/Boost.Test). Users (quants) 1st line support for QA-Library.
+Was responsible for support and development of Functional Model Deployment project (proprietary functional language written mostly in C++ and hosted in Excel), as well as general support for QA library users (quants and IT)  
+Worked mostly on improvements and bug-fixing in C# and VBA part of FMD plus minor optimisation and bug fixing in core (C++) FMD; Build support/improvement (TeamCity+NUnit/Boost.Test). Users (quants) 1st line support for QA-Library.
 
 * .NET/C# 3.5, C++, VBA (Excel), Perforce, TeamCity
 
@@ -144,21 +145,20 @@ As a member of Moscow Servers Team participated in the development of server-sid
 
 ---
 ### [R-Style Softlab](https://www.softlab.ru/)
-Moscow, Russia
-Software Developer
+Moscow, Russia  
+Software Developer  
 November 2000 – December 2004
 
 Banking software development company
 
-Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase
+Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 
 * .NET/C# 1.0, MS VC++/ATL, MSSQL 2000, Rational XDE, ERWin, NUnit, NDoc, VSS
 
 ---
 ## Education
 
-### Taganrog State University of Radio Engineering  
+### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)  
 Taganrog, Russian Federation  
 1994-1999  
-Bachelor of Computer Science “Software for computing machinery and computer-aided systems” specialty.
-Degree with honours.
+Bachelor of Computer Science
