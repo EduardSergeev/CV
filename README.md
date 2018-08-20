@@ -17,19 +17,19 @@ Eduard Sergeev
 
 ### [Cashrewards](http://www.cashrewards.com.au)
 Sydney, Australia  
-Senior Software Developer (contractor)  
+**Senior Software Developer (contractor)**  
 August 2017 - October 2017
 
 Cashback service for retail customers  
 
-Was full stack developer for maintaining and development of company website and internal services.
+Was full stack developer for maintaining and development of company website (.NET/C#/ASP.NET/MVC) and internal services.
 
 * .NET/C# 4.5, MSSQL 2012, ASP.NET/MVC, AWS, Bitbucket
 
 ---
 ### [Wisetech Global](http://www.wisetechglobal.com/)
 Sydney, Australia  
-Software Developer 
+**Software Developer**  
 April 2017 - August 2017
 
 Software solutions for logistics industry
@@ -42,7 +42,7 @@ Was responsible for software support and development in "Customs" and "Accountin
 ---
 ### [Ambiata](https://www.ambiata.com/)
 Sydney, Australia  
-Software Developer  
+**Software Developer**  
 June 2015 - August 2016
 
 Big data analytics - massive-scale personalised marketing service
@@ -55,7 +55,7 @@ Was responsible mostly for RDS-related services: declarative DB deployment and m
 ---
 ### [Siemens Building Technologies](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
 Sydney, Australia  
-Software Developer  
+**Software Developer**  
 July 2013 – May 2015
 
 Siemens Building Technologies - access control for buildings
@@ -68,7 +68,7 @@ Was responsible for server-side of the project (including DB). Subsequently work
 ---
 ### [Amnesty International](https://www.amnesty.org.au/)  
 Sydney, Australia  
-Senior Software Developer (Contractor)  
+**Senior Software Developer (contractor)**  
 May 2011 – October 2012
 
 Non-governmental organisation focused on human rights
@@ -82,8 +82,7 @@ Integrated internal CRM system with company website. Implemented payment gateway
 ---
 ### [Barclays Capital](https://en.wikipedia.org/wiki/Barclays_Investment_Bank)
 London, UK  
-Software Developer (Contractor)
-
+**Software Developer (contractor)**  
 April 2010 – October 2010
 
 Investment bank, quantitative analytics team
@@ -96,7 +95,7 @@ Worked mostly on improvements and bug-fixing in C# and VBA part of FMD plus mino
 ---
 ### [Credit Suisse](https://en.wikipedia.org/wiki/Credit_Suisse)  
 London, UK  
-Software Developer (AVP)  
+**Software Developer (AVP)**  
 April 2009 – April 2010
 
 Investment bank, Credit Derivatives IT
@@ -109,20 +108,20 @@ Enhanced existing reporting/task framework (SQL+XSLT+WF). Built server side for 
 ---
 ### [Towers Perrin](https://en.wikipedia.org/wiki/Towers_Perrin)  
 Sydney, Australia  
-Software Developer  
+**Software Developer**  
 February 2008 – January 2009
 
 Actuarial consultancy and software development company
 
 Participated in “RiskAgility” project – conversion of the legacy desktop application into enterprise solution/platform  
-Was responsible for “data & security” part of the platform (.NET 3.5: WCF, WPF, LINQ2SQL, WF, SQL 2005).  
+Was responsible for “data & security” part of the platform.  
 
 * .NET/C# 3.5, WCF, LINQ2SQL, MSSQL 2005, Windsor Container(IoC), Rhino Mocks
 
 ---
 ### [Symantec](https://www.symantec.com/products/endpoint-management)
 Sydney, Australia  
-Software Developer  
+**Software Developer**  
 October 2005 – February 2008
 
 [Altiris](https://en.wikipedia.org/wiki/Altiris) before acquisition - service-oriented IT-management solution 
@@ -134,7 +133,7 @@ Was a part of Notification Server development team working on Notification Serve
 ---
 ### [CQG International](https://en.wikipedia.org/wiki/CQG)
 Moscow, Russia  
-Software Developer  
+**Software Developer**  
 January 2005 – September 2005
 
 Trading software development company
@@ -146,7 +145,7 @@ As a member of Moscow Servers Team participated in the development of server-sid
 ---
 ### [R-Style Softlab](https://www.softlab.ru/)
 Moscow, Russia  
-Software Developer  
+**Software Developer**  
 November 2000 – December 2004
 
 Banking software development company
@@ -159,6 +158,6 @@ Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 ## Education
 
 ### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)  
-Taganrog, Russian Federation  
+Taganrog, Russia  
+**Bachelor of Computer Science**  
 1994-1999  
-Bachelor of Computer Science
