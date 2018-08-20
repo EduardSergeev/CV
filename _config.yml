@@ -1,2 +1,3 @@
 markdown:      kramdown
 style-screen:  retro
+style-print:   print

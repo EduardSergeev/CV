@@ -161,6 +161,10 @@ small,
   font-size: .707em;
 }
 
+li {
+  margin-left: -1em
+}
+
 /* https://github.com/mrmrs/fluidity */
 
 img,
