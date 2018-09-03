@@ -1,11 +1,3 @@
-Eduard Sergeev
-==============
-**Software Developer**  
-**Sydney, Australia**  
-<eduard.sergeev@gmail.com>  
-[GitHub](https://github.com/EduardSergeev) [stackoverflow](https://stackoverflow.com/users/394253/edka) [LinkedIn](https://www.linkedin.com/in/eduardsergeev/)
-
-
 ## Summary
 * 15 years of .NET/C# (1.0-4.7) predominantly server-side development
 * Along with practical knowledge DBMS/SQL: MSSQL, PostgreSQL

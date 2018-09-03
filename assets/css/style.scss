@@ -1,0 +1,46 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+nav ul li.tag-h2 {
+  font-size: 1.2em;
+  }
+
+nav ul li.tag-h2 a {
+  font-weight: bold;
+  color: #333;
+  }
+
+nav ul li.tag-h3 + .tag-h2 {
+  margin-top: 10px;
+  }
+
+
+#banner {
+    // right:0%;
+  } 
+
+.contacts {
+  float: left;
+  position:fixed;
+  left:50%;
+  margin-left:-325px;
+  }
+
+.contact {
+    margin-left: 5px;
+    padding: 10px 12px;
+    margin-top: 7px;
+    line-height:14px;
+    font-size:14px;
+    font-weight: bold;
+    display:inline-block;
+}  
+
+  .sites {
+    float: right;
+    position: fixed;
+    right: 50%;
+    margin-right: -325px;
+  }
