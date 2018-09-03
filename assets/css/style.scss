@@ -3,44 +3,92 @@
 
 @import "{{ site.theme }}";
 
+body {
+  background: #eae6d1;
+}
+
+.wrapper {
+  width:850px;
+  margin:0 auto;
+  position:relative;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  background: none;
+  margin: 0 0 20px;
+}
+
+ul {
+  list-style-image: none;
+}
+
+li {
+  margin-left: -1.5em
+}
+
+header {
+  padding: 10px 20px 10px 20px;
+  background: #6e7173;
+  box-shadow: initial;
+
+  h1 {
+    font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    text-shadow: initial;
+  }
+
+  p {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+section {
+  width: 750px;
+  padding: 30px 30px 50px 30px;
+  margin: 20px 0;
+  margin-top: 190px;
+  margin-left: 50px;
+  position: relative;
+  background: #fbfbfb;
+  border-radius: 3px;
+  border: 1px solid #cbcbcb;
+  box-shadow: none;
+  }
+
+nav {
+  width: 230px;
+  position: fixed;
+  top: 190px;
+  left: 45%;
+
+  ul {
+    a {
+      color: initial;
+      &:hover { color: #999; }
+    }
+  }
+}
+
 nav ul li.tag-h2 {
   font-size: 1.2em;
   }
 
 nav ul li.tag-h2 a {
   font-weight: bold;
-  color: #333;
   }
 
 nav ul li.tag-h3 + .tag-h2 {
   margin-top: 10px;
   }
 
-
-#banner {
-    // right:0%;
-  } 
-
-.contacts {
-  float: left;
-  position:fixed;
-  left:50%;
-  margin-left:-325px;
-  }
-
-.contact {
-    margin-left: 5px;
-    padding: 10px 12px;
-    margin-top: 7px;
-    line-height:14px;
-    font-size:14px;
-    font-weight: bold;
-    display:inline-block;
-}  
-
-  .sites {
-    float: right;
-    position: fixed;
-    right: 50%;
-    margin-right: -325px;
-  }
+a {
+  color: initial;
+  &:hover { color: #999; }
+}

@@ -2,6 +2,14 @@
 <html lang="{{ site.lang | default: " en-US " }}">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21879964-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-21879964-4');
+  </script>  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> {% seo %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,43 +29,22 @@
     <h1>{{ site.cv.name }}</h1>
     <p>
       {{ site.cv.title }}<br/>
-      {{ site.cv.location }}
+      {{ site.cv.location }}<br/>
+      <a href="mailto:{{ site.cv.email }}">{{ site.cv.email }}</a><br/>
+      <a href="tel:{{ site.cv.phone }}">{{ site.cv.phone }}</a><br/>
+      <a href="{{ site.cv.github }}" title="GitHub">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      &nbsp;
+      <a href="{{ site.cv.stackoverflow }}" title="Stackoverflow">
+        <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+      </a>
+      &nbsp;
+      <a href="{{ site.cv.linkedin }}" title="LinkedIn">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
     </p>
   </header>
-
-  <div id="banner">
-    <div class="contacts">
-      <!-- <ul class="fork"> -->
-        <!-- <li> -->
-          <!-- <div> -->
-            <strong>
-          <a href="mailto:{{ site.cv.email }}" class="contact">{{ site.cv.email }}</a>
-          <a href="tel:{{ site.cv.phone }}" class="contact">{{ site.cv.phone }}</a>
-          </strong>
-          <!-- </div> -->
-        <!-- </li> -->
-      <!-- </ul> -->
-    </div>
-    <div class="sites">
-      <ul>
-        <li>
-          <a href="{{ site.cv.github }}" class="button" title="GitHub">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.cv.stackoverflow }}" class="button" title="Stackoverflow">
-            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.cv.linkedin }}" class="button" title="LinkedIn">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 
   <div class="wrapper">
     <nav>
@@ -65,12 +52,9 @@
     </nav>
     <section>
       {{ content }}
-
     </section>
     <footer>
     </footer>
   </div>
-
 </body>
-
 </html>
