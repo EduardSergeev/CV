@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 body {
-  background: #eae6d1;
+  background: white;
 }
 
 .wrapper {
@@ -34,17 +34,18 @@ li {
 
 header {
   padding: 10px 20px 10px 20px;
-  background: #6e7173;
-  box-shadow: initial;
+  background: white;
+  box-shadow: none;
+  border: 1px solid #cbcbcb;
 
   h1 {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
+    color: black;
     text-shadow: initial;
   }
 
   p {
-    color: white;
+    color: black;
     text-shadow: none;
   }
 }
@@ -56,7 +57,7 @@ section {
   margin-top: 190px;
   margin-left: 50px;
   position: relative;
-  background: #fbfbfb;
+  background: white;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
   box-shadow: none;
