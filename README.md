@@ -14,9 +14,9 @@ August 2017 - October 2017
 
 Cashback service for retail customers  
 
-Was full stack developer for maintaining and development of company website (.NET/C#/ASP.NET/MVC) and internal services.
+As a full stack developer was responsible for maintenance and development of company website (ASP.NET/MVC) and internal services (AWS).
 
-* .NET/C# 4.5, MSSQL 2012, ASP.NET/MVC, AWS, Bitbucket
+* .NET/C# 4.6, MSSQL 2012, ASP.NET/MVC, JavaScript, CSS, AWS, Bitbucket
 
 ---
 ### [Wisetech Global](http://www.wisetechglobal.com/)
@@ -26,9 +26,9 @@ April 2017 - August 2017
 
 Software solutions for logistics industry
 
-Was responsible for software support and development in "Customs" and "Accounting" teams.
+Was software developer in "Customs" and "Accounting" teams (WinForms applications).
 
-* .NET/C# 4.5, TFS
+* .NET/C# 4.6, WinForms, TFS
 
 
 ---
@@ -39,8 +39,8 @@ June 2015 - August 2016
 
 Big data analytics - massive-scale personalised marketing service
 
-Worked on infrastructure code: mostly Haskell codebase, microservices, cloud-based deployment (AWS).  
-Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end service for statistics storage and retrieval.
+Worked on infrastructure code: mostly Haskell (and Scala) codebase, microservices architecture, cloud-based deployment (AWS).  
+Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end for statistical data storage service.
 
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, git/github
 
