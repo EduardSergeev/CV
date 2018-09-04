@@ -70,7 +70,7 @@ li {
   }
 
 nav {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: right;
 
   ul {
@@ -85,6 +85,17 @@ nav ul li.tag-h2 a {
 nav ul li.tag-h3 + .tag-h2 {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  #scrollable {
+    overflow-y: initial;
+  }
+}
+
 
 a {
   color: black;
