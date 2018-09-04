@@ -1,7 +1,6 @@
 markdown: kramdown
 
-repository: CV/EduardSergeev
-
+repository: EduardSergeev/CV
 
 cv:
   name: Eduard Sergeev

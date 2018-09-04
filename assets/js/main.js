@@ -10,7 +10,9 @@ $(function() {
   $("nav ul li").on("click", "a", function(event) {
     var position = $($(this).attr("href")).position().top;
     var scroll = $("#scrollable").scrollTop();
-    $("#scrollable").animate({scrollTop: position + scroll}, 500);
+    var scrollTop = position + scroll;
+    scrollTop = scrollTop < 70 ? 0 : scrollTop;
+    $("#scrollable").animate({scrollTop: scrollTop}, 500);
  
     $("nav ul li a").parent().removeClass("active");
     $(this).parent().addClass("active");

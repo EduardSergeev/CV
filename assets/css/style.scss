@@ -3,24 +3,19 @@
 
 @import "{{ site.theme }}";
 
-// body {
-//   background: white;
-// }
 
 body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: white;
-    letter-spacing: 1px;
+  color: #333;
+  font: 14px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-// .wrapper {
-//   width:850px;
-//   margin:0 auto;
-//   position:relative;
-// }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin: 0 0 20px;
+}
 
 hr {
   display: block;
@@ -47,74 +42,49 @@ li {
 
 #header {
   padding: 10px 20px 10px 20px;
-  background: white;
   border: 1px solid #cbcbcb;
   text-align: center;
-
-  // font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
 
   h1 {
-    font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
     margin: auto;
   }
 
   p {
     margin: auto;
-  }
-
-  // a {
-  //   color: initial;
-  //   &:hover { color: #999; }
-  // }  
+    font-size: 18px
+  }  
 }
 
 #scrollable {
-  height: 75vh;
+  height: 78vh;
   overflow-y: scroll;
 }
 
 #content {
-  // width: 750px;
   padding: 30px 30px 50px 30px;
-  margin: 20px 20px 20px 20px;
-  // margin-top: 190px;
-  // margin-left: 50px;
-  // position: relative;
-  // background: white;
+  margin: 10px 10px 10px 10px;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
   max-width: 750px;
   }
 
 nav {
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: right;
-  // width: 230px;
-  // position: fixed;
-  // top: 190px;
-  // left: 45%;
 
   ul {
     list-style: none;
-    // a {
-    //   color: initial;
-    //   &:hover { color: #999; }
-    // }
   }
 }
 
-nav ul li.tag-h2 {
-  font-size: 1.2em;
-  }
-
 nav ul li.tag-h2 a {
   font-weight: bold;
-  }
+}
 
 nav ul li.tag-h3 + .tag-h2 {
   margin-top: 10px;
-  }
+}
 
 a {
   color: black;
