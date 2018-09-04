@@ -3,15 +3,24 @@
 
 @import "{{ site.theme }}";
 
+// body {
+//   background: white;
+// }
+
 body {
-  background: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: white;
+    letter-spacing: 1px;
 }
 
-.wrapper {
-  width:850px;
-  margin:0 auto;
-  position:relative;
-}
+// .wrapper {
+//   width:850px;
+//   margin:0 auto;
+//   position:relative;
+// }
 
 hr {
   display: block;
@@ -24,56 +33,74 @@ hr {
   margin: 0 0 20px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 ul {
   list-style-image: none;
 }
 
 li {
-  margin-left: -1.5em
+  margin-left: 1em
 }
 
-header {
+#header {
   padding: 10px 20px 10px 20px;
   background: white;
-  box-shadow: none;
   border: 1px solid #cbcbcb;
+  text-align: center;
+
+  // font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   h1 {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: black;
-    text-shadow: initial;
+    margin: auto;
   }
 
   p {
-    color: black;
-    text-shadow: none;
+    margin: auto;
   }
+
+  // a {
+  //   color: initial;
+  //   &:hover { color: #999; }
+  // }  
 }
 
-section {
-  width: 750px;
+#scrollable {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+#content {
+  // width: 750px;
   padding: 30px 30px 50px 30px;
-  margin: 20px 0;
-  margin-top: 190px;
-  margin-left: 50px;
-  position: relative;
-  background: white;
+  margin: 20px 20px 20px 20px;
+  // margin-top: 190px;
+  // margin-left: 50px;
+  // position: relative;
+  // background: white;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
-  box-shadow: none;
+  max-width: 750px;
   }
 
 nav {
-  width: 230px;
-  position: fixed;
-  top: 190px;
-  left: 45%;
+  padding-top: 30px;
+  text-align: right;
+  // width: 230px;
+  // position: fixed;
+  // top: 190px;
+  // left: 45%;
 
   ul {
-    a {
-      color: initial;
-      &:hover { color: #999; }
-    }
+    list-style: none;
+    // a {
+    //   color: initial;
+    //   &:hover { color: #999; }
+    // }
   }
 }
 
@@ -90,6 +117,6 @@ nav ul li.tag-h3 + .tag-h2 {
   }
 
 a {
-  color: initial;
+  color: black;
   &:hover { color: #999; }
 }
