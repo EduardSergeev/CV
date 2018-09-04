@@ -87,13 +87,36 @@ nav ul li.tag-h3 + .tag-h2 {
 }
 
 @media screen and (max-width: 576px) {
-  nav {
+  #nav {
     display: none;
   }
 
   #scrollable {
     overflow-y: initial;
   }
+}
+
+@media print {
+  #header {
+    border: none;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #scrollable {
+    height: initial;
+    overflow-y: initial;
+    max-width: 100%;
+    width: initial;
+    flex: initial;
+  }
+
+  #content {
+      border: none;
+      max-width: initial;
+    }
 }
 
 
