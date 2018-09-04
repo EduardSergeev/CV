@@ -1,3 +1,14 @@
-markdown:      kramdown
-style-screen:  screen
-style-print:   print
+markdown: kramdown
+
+repository: EduardSergeev/CV
+
+cv:
+  name: Eduard Sergeev
+  title: Software Developer
+  location: Sydney, Australia
+  email: eduard.sergeev@gmail.com
+  phone: "+61406718185"
+  github: https://github.com/EduardSergeev
+  stackoverflow: https://stackoverflow.com/users/394253/edka
+  linkedin: https://www.linkedin.com/in/eduardsergeev
+
