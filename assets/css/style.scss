@@ -57,7 +57,7 @@ li {
 }
 
 #scrollable {
-  height: 78vh;
+  height: 80vh;
   overflow-y: scroll;
 }
 
@@ -75,24 +75,34 @@ nav {
 
   ul {
     list-style: none;
+ }
+
+  .active {
+    text-decoration: underline;
   }
+}
+
+.nav {
+  display: block;
 }
 
 nav ul li.tag-h2 a {
   font-weight: bold;
 }
 
-nav ul li.tag-h3 + .tag-h2 {
+nav ul li.tag-h2 {
   margin-top: 10px;
 }
 
+
 @media screen and (max-width: 576px) {
-  #nav {
+  .nav {
     display: none;
   }
 
   #scrollable {
     overflow-y: initial;
+    width: 100%;
   }
 }
 
@@ -101,7 +111,7 @@ nav ul li.tag-h3 + .tag-h2 {
     border: none;
   }
 
-  #nav {
+  .nav {
     display: none;
   }
 

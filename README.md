@@ -45,7 +45,7 @@ Was responsible mostly for RDS-related services: declarative DB deployment and m
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, git/github
 
 ---
-### [Siemens Building Technologies](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
+### [Siemens](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
 Sydney, Australia  
 **Software Developer**  
 July 2013 – May 2015
@@ -149,7 +149,8 @@ Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 ---
 ## Education
 
-### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)  
+### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)
+{: .nav-exclude}  
 Taganrog, Russia  
 **Bachelor of Computer Science**  
 1994-1999  
