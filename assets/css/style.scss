@@ -3,7 +3,6 @@
 
 @import "{{ site.theme }}";
 
-
 body {
   color: #333;
   font: 14px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -59,11 +58,13 @@ li {
 #scrollable {
   height: 80vh;
   overflow-y: scroll;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
 }
 
 #content {
   padding: 30px 30px 50px 30px;
-  margin: 10px 10px 10px 10px;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
   max-width: 750px;
@@ -78,7 +79,20 @@ nav {
  }
 
   .active {
-    text-decoration: underline;
+    text-decoration: underline !important;
+  }
+}
+
+// @include media-breakpoint-up(sm) {
+@media screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    display: block;
   }
 }
 
@@ -90,25 +104,19 @@ nav ul li.tag-h2 a {
   font-weight: bold;
 }
 
-nav ul li.tag-h2 {
-  margin-top: 10px;
+.nav-link {
+  padding: .1rem 1rem;
 }
 
-
-@media screen and (max-width: 576px) {
-  .nav {
-    display: none;
-  }
-
-  #scrollable {
-    overflow-y: initial;
-    width: 100%;
-  }
+.navbar {
+  padding: 10px 10px 0px 10px;
 }
+
 
 @media print {
   #header {
     border: none;
+    display: block;
   }
 
   .nav {
@@ -131,6 +139,9 @@ nav ul li.tag-h2 {
 
 
 a {
-  color: black;
-  &:hover { color: #999; }
+  color: #333 !important;
+  &:hover {
+    color: #999 !important;
+    text-decoration: none;
+    }
 }
