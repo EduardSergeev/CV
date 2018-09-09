@@ -9,8 +9,8 @@ $(function() {
   $("nav ul li").on("click", "a", function(event) {
     var position = $($(this).attr("href")).position().top;
     var scroll = $("#scrollable").scrollTop();
-    var scrollTop = position + scroll - 10;
-    scrollTop = scrollTop < 70 ? 0 : scrollTop;
+    var scrollTop = position + scroll;
+    scrollTop = scrollTop < 50 ? 0 : scrollTop;
     $("#scrollable").animate({scrollTop: scrollTop}, 500);
     $('.collapse').collapse('hide');
     event.preventDefault();
