@@ -94,7 +94,6 @@ nav {
 
 #nav {
   height: 100%;
-  // overflow-y: scroll;
   padding-bottom: 10px;
 }
 
@@ -108,7 +107,6 @@ nav {
   padding: 30px 30px 50px 30px;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
-  max-width: 750px;
 }
 
 
@@ -117,7 +115,7 @@ nav {
 }
 
 
-@media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height) {
+@media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
     nav {
     text-align: center;
   }
@@ -171,7 +169,7 @@ nav {
 
 
 
-.col-md-md-3, .col-md-md-9 {
+.col-md-md-3, .col-md-md-6, .col-md-md-9 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -183,6 +181,13 @@ nav {
   .col-md-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) {
+  .col-md-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
