@@ -138,14 +138,14 @@ nav {
 
 
 @media print {
+  .nav {
+    display: none;
+  }
+
   #header {
     display: block;
     text-align: left;
     padding-bottom: 40px;
-  }
-
-  .nav {
-    display: none;
   }
 
   #nav {
