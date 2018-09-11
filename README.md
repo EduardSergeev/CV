@@ -1,7 +1,8 @@
 ## Summary
 * 15 years of .NET/C# (1.0-4.7) predominantly server-side development
-* Along with practical knowledge DBMS/SQL: MSSQL, PostgreSQL
-* Commercial experience with functional languages: Haskell, Erlang, J
+* Along with practical knowledge of DBMS/SQL: MSSQL, PostgreSQL
+* Commercial experience with functional languages: Haskell, Erlang
+* C++ background
 
 ---
 ## Experience
@@ -14,9 +15,9 @@ August 2017 - October 2017
 
 Cashback service for retail customers  
 
-As a full stack developer was responsible for maintenance and development of company website (ASP.NET/MVC) and internal services (AWS).
+As a full stack developer was responsible for maintenance and development of company website (ASP.NET MVC, HTML, CSS, JavaScript) and internal services (Winservises, AWS).
 
-* .NET/C# 4.6, MSSQL 2012, ASP.NET/MVC, JavaScript, CSS, AWS, Bitbucket
+* .NET/C# 4.6, MSSQL 2012, ASP.NET MVC, AWS, Bitbucket
 
 ---
 ### [Wisetech Global](http://www.wisetechglobal.com/)
@@ -45,9 +46,9 @@ Was responsible mostly for RDS-related services: declarative DB deployment and m
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, git/github
 
 ---
-### [Siemens Building Technologies](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
+### [Siemens](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
 Sydney, Australia  
-**Software Developer**  
+**Software Developer (contractor)**  
 July 2013 – May 2015
 
 Siemens Building Technologies - access control for buildings
@@ -149,7 +150,8 @@ Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 ---
 ## Education
 
-### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)  
+### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)
+{: .nav-exclude}  
 Taganrog, Russia  
 **Bachelor of Computer Science**  
 1994-1999  
