@@ -15,9 +15,9 @@ August 2017 - October 2017
 
 Cashback service for retail customers  
 
-As a full stack developer was responsible for maintenance and development of company website (ASP.NET MVC, HTML, CSS, JavaScript) and internal services (Winservises, AWS).
+As a full stack developer was responsible for maintenance and development of company website (ASP.NET MVC, HTML, CSS, JavaScript) and internal services (AWS).
 
-* .NET/C# 4.6, MSSQL 2012, ASP.NET MVC, AWS, Bitbucket
+* .NET/C# 4.6, MSSQL 2012, Moq, Ninject, ASP.NET MVC, AWS, Bitbucket
 
 ---
 ### [Wisetech Global](http://www.wisetechglobal.com/)
@@ -133,7 +133,7 @@ Trading software development company
 
 As a member of Moscow Servers Team participated in the development of server-side components for “New Client” project - the replacement (.NET/C#) for the legacy (C++) platform CQG (complete package of trading software products).
 
-* .NET/C# 1.1, MSSQL 2000, NUni+NCover, CVS.
+* .NET/C# 1.1, MSSQL 2000, NUnit, NCover, CVS.
 
 ---
 ### [R-Style Softlab](https://www.softlab.ru/)
