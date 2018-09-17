@@ -41,12 +41,12 @@ li {
 }
 
 
-#header {
+header {
   padding: 5px 20px 10px 20px;
   border-bottom: 1px solid #cbcbcb;
   text-align: center;
   color: black;
-  margin: 0px 10px;
+  margin: 0px 10px !important;
 
   h1 {
     margin: auto;
@@ -130,8 +130,8 @@ nav {
 
 
 @media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) { 
-  #header {
-    display: block;
+  header {
+    display: block !important;
   }
 }
 
@@ -142,11 +142,8 @@ nav {
 
   }
 
-  .nav {
-    display: none;
-  }
 
-  #header {
+  header {
     display: block;
     text-align: left;
     padding-bottom: 40px;
