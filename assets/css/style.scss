@@ -59,15 +59,19 @@ header {
 }
 
 nav {
+  height: 100%;
   text-align: right;
-  padding: 0px 10px 10px 5px !important;
 
   ul {
     list-style: none;
 
-    li.tag-h2 a {
+  li.tag-h2 a {
       font-weight: bold;
-    }   
+  }   
+}
+
+.navbar {
+  padding: 0px 10px 10px 5px !important;
  }
 
   .active {
@@ -91,10 +95,6 @@ nav {
   margin-right: auto;
 }
 
-#nav {
-  height: 100%;
-}
-
 
 #scrollable {
   height: 100%;
@@ -115,11 +115,8 @@ nav {
 
 @media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
   nav {
-    text-align: center;
-  }
-
-  #nav {
     height: initial;
+    text-align: center;
   }
 
   #area {
@@ -149,7 +146,7 @@ nav {
     padding-bottom: 40px;
   }
 
-  #nav {
+  nav {
     height: initial;
   }
 
