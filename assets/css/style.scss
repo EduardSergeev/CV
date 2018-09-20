@@ -8,7 +8,7 @@ $m-height: 550px;
 
 body {
   color: #333;
-  font: 14px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/22px serif, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,14 +28,8 @@ a {
 }
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-  background: none;
-  margin: 0 0 20px;
+  border-top-color: #cbcbcb;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -47,33 +41,37 @@ li {
 }
 
 
-#header {
-  padding: 10px 20px 10px 20px;
+header {
+  padding: 5px 20px 10px 20px;
   border-bottom: 1px solid #cbcbcb;
   text-align: center;
   color: black;
-  margin: 0px -5px;
+  margin: 0px 10px !important;
 
   h1 {
     margin: auto;
   }
 
-  p {
+  p, address {
     margin: auto;
     font-size: 18px
   }  
 }
 
 nav {
+  height: 100%;
   text-align: right;
-  padding: 0px 10px 0px 0px !important;
 
   ul {
     list-style: none;
 
-    li.tag-h2 a {
+  li.tag-h2 a {
       font-weight: bold;
-    }   
+  }   
+}
+
+.navbar {
+  padding: 0px 10px 10px 0px;// !important;
  }
 
   .active {
@@ -85,16 +83,16 @@ nav {
   padding: .1rem 1rem;
 }
 
-
-#area {
-  height: calc(100vh - 156px);
-  border: solid white 10px;
-  margin: 0px -15px;
+#view {
+  padding: 0px;
 }
 
-#nav {
-  height: 100%;
-  padding-bottom: 10px;
+#area {
+  height: calc(100vh - 152px);
+  border: solid white 10px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -104,7 +102,7 @@ nav {
 }
 
 #content {
-  padding: 30px 30px 50px 30px;
+  padding: 20px;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
 }
@@ -116,39 +114,39 @@ nav {
 
 
 @media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
-    nav {
-    text-align: center;
-  }
-
-  #nav {
+  nav {
     height: initial;
+    text-align: center;
   }
 
   #area {
     height: calc(100vh - 50px);
+    max-width: initial;    
   }
 }
 
 
 @media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) { 
-  #header {
-    display: block;
+  header {
+    display: block !important;
   }
 }
 
 
 @media print {
-  .nav {
-    display: none;
+  a:not(.btn) {
+    text-decoration: none;
+
   }
 
-  #header {
+
+  header {
     display: block;
     text-align: left;
     padding-bottom: 40px;
   }
 
-  #nav {
+  nav {
     height: initial;
   }
 

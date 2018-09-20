@@ -11,47 +11,51 @@
     gtag('config', 'UA-21879964-4');
   </script>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduard Sergeev</title>
+  <meta name="description" content="Eduard Sergeev's CV">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div id="header" class="row collapse">
+  <div id="view" class="container-fluid">
+
+    <header class="row collapse">
       <div class="col">
         <h1>{{ site.cv.name }}</h1>
-        <p>
-          {{ site.cv.location }}<br/>
-          <a href="mailto:{{ site.cv.email }}">{{ site.cv.email }}</a><br/>
-          <a href="tel:{{ site.cv.phone }}">{{ site.cv.phone }}</a><br/>
-          <a href="{{ '/assets/pdf/Eduard_Sergeev_CV.pdf' | relative_url }}" title="PDF">
-            <i class="fa fa-file-text" aria-hidden="true"></i>
-          </a>
-          &nbsp;
-          <a href="{{ site.cv.github }}" title="GitHub">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          &nbsp;
-          <a href="{{ site.cv.stackoverflow }}" title="Stackoverflow">
-            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-          </a>
-          &nbsp;
-          <a href="{{ site.cv.linkedin }}" title="LinkedIn">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </p>
+        <address>
+          <p>
+            <strong>{{ site.cv.location }}</strong><br/>
+            <a href="mailto:{{ site.cv.email }}">{{ site.cv.email }}</a><br/>
+            <a href="tel:{{ site.cv.phone }}">{{ site.cv.phone }}</a><br/>
+            <a href="{{ '/assets/pdf/Eduard_Sergeev_CV.pdf' | relative_url }}" title="PDF">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+            </a>
+            &nbsp;
+            <a href="{{ site.cv.github }}" title="GitHub">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            &nbsp;
+            <a href="{{ site.cv.stackoverflow }}" title="Stackoverflow">
+              <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+            </a>
+            &nbsp;
+            <a href="{{ site.cv.linkedin }}" title="LinkedIn">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </p>
+        </address>
       </div>
-    </div>
+    </header>
 
     <div id="area" class="row no-gutters">
-      <div id="nav" class="col-md-md-2 justify-content-center">
-        <nav class="navbar navbar-expand-md-md navbar-light">
+      <nav class="col-md-md-2 justify-content-center">
+        <div class="navbar navbar-expand-md-md navbar-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav, #header" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,14 +64,15 @@
             <ul class="navbar-nav flex-column">
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <div id="scrollable" class="col-md-md-8" data-spy="scroll" data-target="nav" data-offset="40">
         <div id="content">
           {{ content }}
         </div>
       </div>
     </div>
+
   </div>
 </body>
 
