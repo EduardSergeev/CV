@@ -16,4 +16,5 @@ $(function() {
     event.preventDefault();
   });
 
+  window.history.replaceState("", "", new URL(document.URL).pathname);
 });
