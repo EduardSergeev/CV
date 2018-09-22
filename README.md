@@ -17,7 +17,7 @@ Cashback service for retail customers
 
 As a full stack developer was responsible for maintenance and development of company website (ASP.NET MVC, HTML, CSS, JavaScript) and internal services (AWS).
 
-* .NET/C# 4.6, MSSQL 2012, Moq, Ninject, ASP.NET MVC, AWS, Bitbucket
+* .NET/C# 4.6, MSSQL 2012, ASP.NET MVC, AWS, Bitbucket
 
 ---
 ### [Wisetech Global](http://www.wisetechglobal.com/)
