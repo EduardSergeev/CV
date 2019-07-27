@@ -1,6 +1,7 @@
 ## Summary
-* 15 years of .NET/C# (1.0-4.7) predominantly server-side development
-* Along with practical knowledge of DBMS/SQL: MSSQL, PostgreSQL
+* 18 years of .NET/C# (1.0-4.7) predominantly server-side development
+* Good knowledge of DBMS/SQL: MSSQL (2000-2017), PostgreSQL
+* Exposure to cloud-based architecture and development: AWS
 * Commercial experience with functional languages: Haskell, Erlang
 * C++ background
 
@@ -8,16 +9,22 @@
 ## Experience
 
 
-### [Butterfly Systems](http://butterfly.systems/)
+### [Butterfly Systems](https://butterfly.systems/)
 Sydney, Australia  
 **Senior Software Developer**  
 September 2018 - Present
 
 SaaS hospital management systems
 
-Backend developer
+Was responsible for support and development of both backend (.NET 4.7, MSSQl 2017, EF6.2, ASP.NET Web API) hosted on AWS (EC2, RDS, S3, SQS, Lambda) and frontend (ASP.NET MVC, AngularJS, Javascript, HTML, CSS).  
+Set up CI/CD (TeamCity, Octopus), UAT environment, introduced task/issue tracking (Youtrack), integrated with corporate messenger (Slack).  
+Consolidated fragmented source code into monorepository (migrated to Github).  
+Improved/secured AWS insfrastructure (OpenVPN, IAM, VPC, security groups, NAT, Route53).  
+Set up centralised logging and reporting for all backend services (Cloudwatch, Elasticsearch, Kibana, Grafana).  
+Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optimised site content, included website to CI/CD (Webpack).  
+Participated in migration of backend code from EF6 to EF Core as a first step towards migration of the entire backend from .NET/Windows to .NET Core/Linux.
 
-* .NET/C#, 4.5, MSSQL, AWS, Bitbucket
+* .NET/C# 4.7, MSSQL 2017, EF 6.2, ASP.NET MVC/API, AWS, Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
 
 ---
 ### [Cashrewards](http://www.cashrewards.com.au)
@@ -55,7 +62,7 @@ Big data analytics - massive-scale personalised marketing service
 Worked on infrastructure code: mostly Haskell (and Scala) codebase, microservices architecture, cloud-based deployment (AWS).  
 Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end for statistical data storage service.
 
-* Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, git/github
+* Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, Git/Github
 
 ---
 ### [Siemens](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
