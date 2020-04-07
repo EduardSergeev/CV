@@ -9,22 +9,22 @@
 ## Experience
 
 
-### [Butterfly Systems](https://butterfly.systems/)
+### [Butterfly Systems](https://butterfly.systems)
 Sydney, Australia  
 **Senior Software Developer**  
-September 2018 - Present
+September 2018 - March 2020
 
 SaaS hospital management systems
 
-Was responsible for support and development of both backend (.NET 4.7, MSSQl 2017, EF6.2, ASP.NET Web API) hosted on AWS (EC2, RDS, S3, SQS, Lambda) and frontend (ASP.NET MVC, AngularJS, Javascript, HTML, CSS).  
+Was responsible for support and development of both backend (.NET 4.7, MSSQl 2017, EF6.2, ASP.NET Web API) hosted on AWS (EC2, RDS, S3, SQS, Lambda, SES) and frontend (ASP.NET MVC, AngularJS, Javascript, HTML, CSS).  
 Set up CI/CD (TeamCity, Octopus), UAT environment, introduced task/issue tracking (Youtrack), integrated with corporate messenger (Slack).  
 Consolidated fragmented source code into monorepository (migrated to Github).  
 Improved/secured AWS insfrastructure (OpenVPN, IAM, VPC, security groups, NAT, Route53).  
 Set up centralised logging and reporting for all backend services (Cloudwatch, Elasticsearch, Kibana, Grafana).  
 Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optimised site content, included website to CI/CD (Webpack).  
-Participated in migration of backend code from EF6 to EF Core as a first step towards migration of the entire backend from .NET/Windows to .NET Core/Linux.
+Participated in migration of backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
 
-* .NET/C# 4.7, MSSQL 2017, EF 6.2, ASP.NET MVC/API, AWS, Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
+* .NET/C# 4.7, .NET Core 3.1, MSSQL 2017, EF 6.2, EF Core 2.2, ASP.NET MVC/API, AWS (EC2, RDS, S3, SQS, Lambda, SES), Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
 
 ---
 ### [Cashrewards](http://www.cashrewards.com.au)
@@ -39,7 +39,7 @@ As a full stack developer was responsible for maintenance and development of com
 * .NET/C# 4.6, MSSQL 2012, ASP.NET MVC, AWS, Bitbucket
 
 ---
-### [Wisetech Global](http://www.wisetechglobal.com/)
+### [Wisetech Global](http://www.wisetechglobal.com)
 Sydney, Australia  
 **Software Developer**  
 April 2017 - August 2017
@@ -52,7 +52,7 @@ Was software developer in "Customs" and "Accounting" teams (WinForms application
 
 
 ---
-### [Ambiata](https://www.ambiata.com/)
+### [Ambiata](https://www.ambiata.com)
 Sydney, Australia  
 **Software Developer**  
 June 2015 - August 2016
@@ -78,7 +78,7 @@ Was responsible for server-side of the project (including DB). Subsequently work
 * .NET/C# 4.0, WCF, MSSQL 2008, EF, TPL, Unity, Wix, TFS
 
 ---
-### [Amnesty International](https://www.amnesty.org.au/)  
+### [Amnesty International](https://www.amnesty.org.au)  
 Sydney, Australia  
 **Senior Software Developer (contractor)**  
 May 2011 – October 2012
@@ -155,7 +155,7 @@ As a member of Moscow Servers Team participated in the development of server-sid
 * .NET/C# 1.1, MSSQL 2000, NUnit, NCover, CVS.
 
 ---
-### [R-Style Softlab](https://www.softlab.ru/)
+### [R-Style Softlab](https://www.softlab.ru)
 Moscow, Russia  
 **Software Developer**  
 November 2000 – December 2004
