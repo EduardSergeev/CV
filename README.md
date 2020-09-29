@@ -170,7 +170,6 @@ Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 ## Education
 
 ### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)
-{: .nav-exclude}  
 Taganrog, Russia  
 **Bachelor of Computer Science**  
 1994-1999  

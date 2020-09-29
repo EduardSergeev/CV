@@ -1,2 +1,4 @@
-_site/
-.sass-cache/
+/.stack-work
+/.store
+/docs
+/node_modules
