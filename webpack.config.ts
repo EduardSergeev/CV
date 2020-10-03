@@ -1,20 +1,24 @@
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const PurgeCSSPlugin = require('purgecss-webpack-plugin')
-const path = require('path');
+import { ConfigurationFactory } from 'webpack';
+import * as CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import * as CopyWebpackPlugin from 'copy-webpack-plugin';
+import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import TerserJSPlugin = require('terser-webpack-plugin');
+import OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+import * as path from 'path';
+const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, '.'),
   dist: path.join(__dirname, 'docs'),
-  name: ext => `[name].${ext}?v=[contenthash:8]`
 }
 
-module.exports = (env, argv) => ({
+function name(ext) {
+  return `[name].${ext}?v=[contenthash:8]`
+}
+
+const config: ConfigurationFactory = (env, argv) => ({
   context: PATHS.src,
   entry: {
     style: './assets/scss/style.scss',
@@ -22,7 +26,7 @@ module.exports = (env, argv) => ({
   },
   output: {
     path: PATHS.dist,
-    filename: `./assets/js/${PATHS.name('js')}`
+    filename: `./assets/js/${name('js')}`
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -31,7 +35,7 @@ module.exports = (env, argv) => ({
       to: 'assets/pdf'
     }]),
     new MiniCssExtractPlugin({
-      filename: `./assets/css/${PATHS.name('css')}`
+      filename: `./assets/css/${name('css')}`
     }),
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -94,7 +98,7 @@ module.exports = (env, argv) => ({
           fallback: {
             loader: 'file-loader',
             options: {
-              name: PATHS.name('[ext]'),
+              name: name('[ext]'),
               outputPath: '/assets/images'
             }
           }
@@ -119,7 +123,7 @@ module.exports = (env, argv) => ({
       use: [{
         loader: 'file-loader',
         options: {
-          name: PATHS.name('[ext]'),
+          name: name('[ext]'),
           outputPath: '.'
         }
       }, {
@@ -142,6 +146,7 @@ module.exports = (env, argv) => ({
       new TerserJSPlugin(),
       new OptimizeCssAssetsPlugin()
     ]
-  },
-  stats: 'detailed'
+  }
 });
+
+export default config;
