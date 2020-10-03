@@ -1,0 +1,28 @@
+name: master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: gh-pages
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm install
+    - run: npm run build
+    - name: Publish site to a branch
+      run: |
+        VERSION=$(node -p "require('./package.json').version")
+        git fetch --all
+        git checkout $BRANCH
+        git add docs/*
+        git -c "user.name=Auto Publisher" -c "user.email=eduard.sergeev@gmail.com" commit -m "Build $VERSION"    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ env.BRANCH }}
