@@ -1,8 +1,8 @@
-name: branch
+name: master
 
 on:
   push:
-    branches-ignore:
+    branches:
       - master
 
 jobs:
@@ -21,3 +21,8 @@ jobs:
         git checkout $BRANCH
         git add docs/*
         git -c "user.name=Auto Publisher" -c "user.email=eduard.sergeev@gmail.com" commit -m "Build $VERSION"    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ env.BRANCH }}

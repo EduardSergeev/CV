@@ -1,6 +1,7 @@
 {
     "name": "cv",
     "version": "2020.10.3",
+    "private": true,
     "description": "Eduard Sergeev CV",
     "dependencies": {
         "bootstrap": "^4.5.2",
