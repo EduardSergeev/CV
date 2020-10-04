@@ -1,32 +1,21 @@
-import { ConfigurationFactory } from 'webpack';
-import * as CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import { ConfigurationFactory } from "webpack";
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import * as CopyWebpackPlugin from 'copy-webpack-plugin';
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
-import TerserJSPlugin = require('terser-webpack-plugin');
-import OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+import * as TerserJSPlugin from 'terser-webpack-plugin';
+import * as OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import * as path from 'path';
-const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 
-const PATHS = {
-  src: path.join(__dirname, '.'),
-  dist: path.join(__dirname, 'docs'),
-}
+const name = ({ name = '[name]', ext = '[ext]' } = {}) =>
+  `${name}.${ext}?v=[contenthash:8]`;
 
-function name(ext) {
-  return `[name].${ext}?v=[contenthash:8]`
-}
 
 const config: ConfigurationFactory = (env, argv) => ({
-  context: PATHS.src,
-  entry: {
-    style: './assets/scss/style.scss',
-    main: './assets/js/main.ts'
-  },
+  context: __dirname,
+  entry: './assets/ts/main.ts',
   output: {
-    path: PATHS.dist,
-    filename: `./assets/js/${name('js')}`
+    path: path.join(__dirname, 'dist'),
+    filename: `assets/js/${name({ ext: 'js' })}`,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -34,23 +23,10 @@ const config: ConfigurationFactory = (env, argv) => ({
       from: 'assets/pdf',
       to: 'assets/pdf'
     }]),
-    new MiniCssExtractPlugin({
-      filename: `./assets/css/${name('css')}`
-    }),
     new HtmlWebpackPlugin({
       template: './index.html',
-      inject: false
     }),
-  ].concat(argv.mode === 'production' ? [
-    new PurgeCSSPlugin({
-      paths: ['./index.html'],
-      rejected: true,
-      safelist: [
-        'active', 'tag-h2', 'h2', 'h3',
-        'nav-item', 'nav-link', 'collapsing'
-      ],
-    })] : []
-  ),
+  ],
   module: {
     rules: [{
       test: /\.html$/,
@@ -66,26 +42,44 @@ const config: ConfigurationFactory = (env, argv) => ({
               tag: 'link',
               attribute: 'href',
               type: 'src',
+            }, {
+              tag: 'script',
+              attribute: 'src',
+              type: 'src',
             }]
           }
         }
       }]
     }, {
       test: /\.tsx?$/,
-      use: 'ts-loader'
-    }, {
-      test: /\.css$/,
-      loaders: [
-        'style-loader',
-        MiniCssExtractPlugin.loader,
-        'css-loader',
-      ]
+      use: 'ts-loader',
     }, {
       test: /style\.scss$/,
-      loaders: [
-        'style-loader',
-        MiniCssExtractPlugin.loader,
+      loaders: [{
+        loader: 'file-loader',
+        options: {
+          name: name({ ext: 'css' }),
+          outputPath: 'assets/css'
+        }
+      },
+        'extract-loader',
         'css-loader',
+      {
+        loader: 'postcss-loader',
+        options: {
+          postcssOptions: {
+            plugins: {
+              '@fullhuman/postcss-purgecss': {
+                content: ['index.html'],
+                safelist: [
+                  'active', 'tag-h2', 'h2', 'h3',
+                  'nav-item', 'nav-link', 'collapsing'
+                ]
+              }
+            }
+          }
+        }
+      },
         'sass-loader'
       ]
     },
@@ -98,33 +92,29 @@ const config: ConfigurationFactory = (env, argv) => ({
           fallback: {
             loader: 'file-loader',
             options: {
-              name: name('[ext]'),
+              name,
               outputPath: '/assets/images'
             }
           }
         }
       }]
-    },
-    {
+    }, {
       test: /\.svg$/,
       loader: 'svg-url-loader',
       options: {
         limit: 8192,
         noquotes: true
       }
-    },
-    {
+    }, {
       test: argv.mode === 'production' ? /\.(jpg|png|gif|svg)$/ : /.^/,
       loader: 'image-webpack-loader',
       enforce: 'pre'
-    },
-    {
+    }, {
       test: /(manifest\.webmanifest)$/,
       use: [{
         loader: 'file-loader',
         options: {
-          name: name('[ext]'),
-          outputPath: '.'
+          name
         }
       }, {
         loader: "app-manifest-loader"
@@ -142,7 +132,6 @@ const config: ConfigurationFactory = (env, argv) => ({
   },
   optimization: {
     minimizer: [
-      new CssMinimizerPlugin(),
       new TerserJSPlugin(),
       new OptimizeCssAssetsPlugin()
     ]
