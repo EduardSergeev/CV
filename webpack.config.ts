@@ -23,6 +23,10 @@ const config: ConfigurationFactory = (env, argv) => ({
       from: 'assets/pdf',
       to: 'assets/pdf'
     }]),
+    new CopyWebpackPlugin([{
+      from: 'CNAME',
+      to: '.'
+    }]),
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
