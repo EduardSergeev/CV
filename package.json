@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "2020.10.4",
+  "version": "2020.10.5",
   "private": true,
   "description": "Eduard Sergeev CV",
   "dependencies": {
