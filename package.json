@@ -45,7 +45,7 @@
   "scripts": {
     "build": "webpack --mode production --optimize-minimize",
     "dev": "webpack --mode development",
-    "start": "http-server docs"
+    "start": "http-server dist"
   },
   "repository": {
     "type": "git",

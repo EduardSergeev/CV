@@ -19,6 +19,8 @@ jobs:
         VERSION=$(node -p "require('./package.json').version")
         git fetch --all
         git checkout $BRANCH
+        rm -fr docs
+        mv dist docs
         git add docs/*
         git -c "user.name=Auto Publisher" -c "user.email=eduard.sergeev@gmail.com" commit -m "Build $VERSION"    
     - name: Push changes

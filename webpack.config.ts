@@ -14,7 +14,7 @@ const config: ConfigurationFactory = (env, argv) => ({
   context: __dirname,
   entry: './assets/ts/main.ts',
   output: {
-    path: path.join(__dirname, 'docs'),
+    path: path.join(__dirname, 'dist'),
     filename: `assets/js/${name({ ext: 'js' })}`,
   },
   plugins: [
