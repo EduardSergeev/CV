@@ -2,7 +2,6 @@ name: build
 
 on:
   push:
-  pull_request:
 
 jobs:
   build:
@@ -21,7 +20,7 @@ jobs:
         rm -fr docs
         mv dist docs
         git add docs
-        git -c "user.name=$GIT_AUTHOR_NAME" -c "user.email=$GIT_AUTHOR_EMAIL" commit -m "Build $VERSION"    
+        git -c "user.name=$GIT_AUTHOR_NAME" -c "user.email=$GIT_AUTHOR_EMAIL" commit --allow-empty -m "Build $VERSION"    
       env:
         GIT_AUTHOR_NAME: Auto Publisher
         GIT_AUTHOR_EMAIL: ${{ secrets.PUBLISHER_EMAIL }}
