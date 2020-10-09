@@ -8,7 +8,12 @@
 ---
 ## Experience
 
+### [Domain Group](https://www.domain.com.au)
+Sydney, Australia  
+**Senior Software Developer**  
+October 2020 - Present
 
+---
 ### [Butterfly Systems](https://butterfly.systems)
 Sydney, Australia  
 **Senior Software Developer**  
@@ -50,7 +55,6 @@ Was software developer in "Customs" and "Accounting" teams (WinForms application
 
 * .NET/C# 4.6, WinForms, TFS
 
-
 ---
 ### [Ambiata](https://www.ambiata.com)
 Sydney, Australia  
@@ -85,7 +89,7 @@ May 2011 – October 2012
 
 Non-governmental organisation focused on human rights
 
-Worked on modernisation of the IT (software) infrastructure   
+Worked on modernisation of the IT (software) infrastructure  
 Set up and maintained proper software development environment (source control, CI, TDD)  
 Integrated internal CRM system with company website. Implemented payment gateway service working with Westpac banking portal. Implemented synchronisation between internal CRM and Campaign Monitor. Integrated CMS with the external campaign website.
 
@@ -136,7 +140,7 @@ Sydney, Australia
 **Software Developer**  
 October 2005 – February 2008
 
-[Altiris](https://en.wikipedia.org/wiki/Altiris) before acquisition - service-oriented IT-management solution 
+[Altiris](https://en.wikipedia.org/wiki/Altiris) before acquisition - service-oriented IT-management solution
 
 Was a part of Notification Server development team working on Notification Server IT-management solution suite (Assets Management, Patch Management, Inventory etc.). Worked on both, managed (.NET/C#/ASP.NET) NS Server and unmanaged (C++/COM) NS Agent sides.
 
