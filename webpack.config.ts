@@ -1,14 +1,16 @@
-import { ConfigurationFactory } from "webpack";
+import { ConfigurationFactory } from 'webpack';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import * as CopyWebpackPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as HtmlWebpackProcessingPlugin from 'html-webpack-processing-plugin';
 import * as TerserJSPlugin from 'terser-webpack-plugin';
 import * as OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import * as path from 'path';
+import * as cheerio from 'cheerio';
+
 
 const name = ({ name = '[name]', ext = '[ext]' } = {}) =>
   `${name}.${ext}?v=[contenthash:8]`;
-
 
 const config: ConfigurationFactory = (env, argv) => ({
   context: __dirname,
@@ -29,7 +31,18 @@ const config: ConfigurationFactory = (env, argv) => ({
     }]),
     new HtmlWebpackPlugin({
       template: './index.html',
+      preProcessing: html => {
+        const $ = cheerio.load(html);
+        $('h2,h3').each((_, tag: cheerio.TagElement) => {
+          $('nav ul').append(`
+            <li class="nav-item tag-${tag.name}">
+              <a class="nav-link" href="#${tag.attribs.id}">${$(tag).text()}</a>
+            </li>`);
+        });
+        return $.html();
+      }
     }),
+    new HtmlWebpackProcessingPlugin()
   ],
   module: {
     rules: [{
