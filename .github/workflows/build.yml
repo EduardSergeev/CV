@@ -8,13 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BRANCH: gh-pages
+      TZ: Australia/Sydney
     steps:
     - uses: actions/checkout@v2
+    - name: Use current date as a version
+      run: echo "VERSION=$(date +%Y.%m.%d)" >> $GITHUB_ENV
+    - run: npm version ${{ env.VERSION }} --no-git-tag-version
     - run: npm install
     - run: npm run build
     - name: Publish site to a '${{ env.BRANCH }}' branch
       run: |
-        VERSION=$(node -p "require('./package.json').version")
+        git reset --hard
         git fetch origin $BRANCH
         git checkout $BRANCH
         rm -fr docs
