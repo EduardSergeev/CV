@@ -1,8 +1,18 @@
 {
   "name": "cv",
-  "version": "2020.10.6",
+  "version": "0.0.0",
   "private": true,
   "description": "Eduard Sergeev CV",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardSergeev/CV.git"
+  },
+  "homepage": "https://github.com/EduardSergeev/CV",
+  "author": "Eduard Sergeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardSergeev/CV/issues"
+  },
   "dependencies": {
     "bootstrap": "^4.5",
     "jquery": "^3.5"
@@ -45,15 +55,5 @@
   "scripts": {
     "build": "webpack --mode production --optimize-minimize",
     "dev": "webpack --mode development"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EduardSergeev/CV.git"
-  },
-  "author": "Eduard Sergeev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EduardSergeev/CV/issues"
-  },
-  "homepage": "https://github.com/EduardSergeev/CV"
+  }
 }
