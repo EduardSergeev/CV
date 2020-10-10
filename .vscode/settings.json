@@ -3,5 +3,10 @@
     "docs": true,
     "node_modules": true,
     "dist": true
+  },
+  "markdownlint.config": {
+    "MD022": false,
+    "MD032": false,
+    "MD041": false
   }
 }
