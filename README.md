@@ -11,7 +11,7 @@
 ### [Domain Group](https://www.domain.com.au)
 Sydney, Australia  
 **Senior Software Developer**  
-October 2020 - Present
+October 2020 - November 2020
 
 ---
 ### [Butterfly Systems](https://butterfly.systems)
