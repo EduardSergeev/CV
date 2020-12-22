@@ -1,21 +1,23 @@
-import { ConfigurationFactory } from "webpack";
+import { ConfigurationFactory } from 'webpack';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import * as CopyWebpackPlugin from 'copy-webpack-plugin';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as HtmlWebpackProcessingPlugin from 'html-webpack-processing-plugin';
 import * as TerserJSPlugin from 'terser-webpack-plugin';
 import * as OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import * as path from 'path';
+import * as cheerio from 'cheerio';
 
-const name = ({ name = '[name]', ext = '[ext]' } = {}) =>
+
+const name = ({name = '[name]', ext = '[ext]'} = {}) =>
   `${name}.${ext}?v=[contenthash:8]`;
 
-
-const config: ConfigurationFactory = (env, argv) => ({
+const config: ConfigurationFactory = (_env, argv) => ({
   context: __dirname,
   entry: './assets/ts/main.ts',
-  output: {
+  output: { 
     path: path.join(__dirname, 'dist'),
-    filename: `assets/js/${name({ ext: 'js' })}`,
+    filename: `assets/js/${name({ext: 'js'})}`,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -29,7 +31,22 @@ const config: ConfigurationFactory = (env, argv) => ({
     }]),
     new HtmlWebpackPlugin({
       template: './index.html',
+      preProcessing: (html: string) => {
+        const $ = cheerio.load(html);
+        $('h2,h3').each((_, tag) => {
+          const id = $(tag).attr('id');
+          const name = $(tag).prop('name');
+          $('nav ul').append(`
+            <li class="nav-item tag-${name}">
+              <a class="nav-link" href="#${id}" onclick="return navigate('#${id}')">
+                ${$(tag).text()}
+              </a>
+            </li>`);
+        });
+        return $.html();
+      }
     }),
+    new HtmlWebpackProcessingPlugin()
   ],
   module: {
     rules: [{

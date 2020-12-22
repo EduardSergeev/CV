@@ -2,7 +2,8 @@
   "files.exclude": {
     "docs": true,
     "node_modules": true,
-    "dist": true
+    "dist": true,
+    "package-lock.json": true
   },
   "markdownlint.config": {
     "MD022": false,
