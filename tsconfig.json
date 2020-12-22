@@ -8,7 +8,11 @@
     ],
     "sourceMap": true,
     "rootDir": ".",
-    "strict": false
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ],
   },
   "exclude": [
     "node_modules"

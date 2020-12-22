@@ -15,7 +15,7 @@ const name = ({name = '[name]', ext = '[ext]'} = {}) =>
 const config: ConfigurationFactory = (_env, argv) => ({
   context: __dirname,
   entry: './assets/ts/main.ts',
-  output: {
+  output: { 
     path: path.join(__dirname, 'dist'),
     filename: `assets/js/${name({ext: 'js'})}`,
   },
@@ -31,16 +31,16 @@ const config: ConfigurationFactory = (_env, argv) => ({
     }]),
     new HtmlWebpackPlugin({
       template: './index.html',
-      preProcessing: html => {
+      preProcessing: (html: string) => {
         const $ = cheerio.load(html);
-        $('h2,h3').each((_, tag: cheerio.TagElement) => {
+        $('h2,h3').each((_, tag) => {
+          const id = $(tag).attr('id');
+          const name = $(tag).prop('name');
           $('nav ul').append(`
-            <li class="nav-item tag-${tag.name}">
-              <a
-                class="nav-link"
-                href="#${tag.attribs.id}"
-                onclick="$('#${tag.attribs.id}')[0].scrollIntoView();return false;"
-              >${$(tag).text()}</a>
+            <li class="nav-item tag-${name}">
+              <a class="nav-link" href="#${id}" onclick="return navigate('#${id}')">
+                ${$(tag).text()}
+              </a>
             </li>`);
         });
         return $.html();
