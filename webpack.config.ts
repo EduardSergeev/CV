@@ -9,15 +9,15 @@ import * as path from 'path';
 import * as cheerio from 'cheerio';
 
 
-const name = ({ name = '[name]', ext = '[ext]' } = {}) =>
+const name = ({name = '[name]', ext = '[ext]'} = {}) =>
   `${name}.${ext}?v=[contenthash:8]`;
 
-const config: ConfigurationFactory = (env, argv) => ({
+const config: ConfigurationFactory = (_env, argv) => ({
   context: __dirname,
   entry: './assets/ts/main.ts',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: `assets/js/${name({ ext: 'js' })}`,
+    filename: `assets/js/${name({ext: 'js'})}`,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -36,7 +36,11 @@ const config: ConfigurationFactory = (env, argv) => ({
         $('h2,h3').each((_, tag: cheerio.TagElement) => {
           $('nav ul').append(`
             <li class="nav-item tag-${tag.name}">
-              <a class="nav-link" href="#${tag.attribs.id}">${$(tag).text()}</a>
+              <a
+                class="nav-link"
+                href="#${tag.attribs.id}"
+                onclick="$('#${tag.attribs.id}')[0].scrollIntoView();return false;"
+              >${$(tag).text()}</a>
             </li>`);
         });
         return $.html();
