@@ -2,7 +2,7 @@ import 'bootstrap/js/src/scrollspy';
 import 'bootstrap/js/src/collapse';
 
 declare global {
-  interface Window { navigate(tag: string): boolean; }
+  interface Window { navigate(tag: string): boolean }
 }
 
 $(() => {
