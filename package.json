@@ -56,9 +56,45 @@
     "webpack": "^4.44",
     "webpack-cli": "^3.3.12"
   },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/all"
+    ],
+    "rules": {
+      "@typescript-eslint/quotes": [
+        "error",
+        "single"
+      ],
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ],
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/space-before-function-paren": "off",
+      "@typescript-eslint/prefer-readonly-parameter-types": "off",
+      "@typescript-eslint/no-magic-numbers": [
+        "error",
+        {
+          "ignoreArrayIndexes": true
+        }
+      ]
+    }
+  },
   "scripts": {
+    "lint": "eslint --ext .ts .",
+    "prebuild": "npm run lint",
     "build": "webpack --mode production --optimize-minimize",
-    "dev": "webpack --mode development",
-    "lint": "eslint -c .eslintrc.js --ext .ts ."
+    "dev": "webpack --mode development"
   }
 }
