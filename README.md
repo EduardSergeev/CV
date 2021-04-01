@@ -1,5 +1,5 @@
 ## Summary
-* 18 years of .NET/C# (1.0-4.7) predominantly server-side development
+* 18 years of .NET/C# (1.0-4.7), .NET Core (2.1-3.1) predominantly server-side development
 * Good knowledge of DBMS/SQL: MSSQL (2000-2017), PostgreSQL
 * Exposure to cloud-based architecture and development: AWS
 * Commercial experience with functional languages: Haskell, Erlang
@@ -12,6 +12,12 @@
 Sydney, Australia  
 **Senior Software Developer**  
 October 2020 - November 2020
+
+Real estate web portal
+
+As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from typeahead on public website to geo search used by other services.
+
+* .NET Core 3.1 (C#), ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, Github
 
 ---
 ### [Butterfly Systems](https://butterfly.systems)
