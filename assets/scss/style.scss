@@ -46,8 +46,8 @@ li {
   width: 18px;
 }
 
-.far {
-  @extend .fab;
+.fa-web {
+  background: url(../images/fontawesome/web.svg);
 }
 
 .fa-file-pdf {
@@ -64,6 +64,14 @@ li {
 
 .fa-linkedin {
   background: url(../images/fontawesome/linkedin-in.svg);
+}
+
+.web-only {
+  display: inline-block;
+}
+
+.print-only {
+  display: none;
 }
 
 header {
@@ -165,7 +173,6 @@ nav {
 
   }
 
-
   header {
     display: block;
     text-align: left;
@@ -189,6 +196,15 @@ nav {
     max-width: initial;
     padding-top: 10px;
   }
+
+  .web-only {
+    display: none;
+  }
+
+  .print-only {
+    display: inline-block;
+  }
+
 }
 
 
