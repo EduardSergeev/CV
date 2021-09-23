@@ -5,7 +5,12 @@ $m-width: "md";
 $m-height: 550px;
 
 body {
-  color: #333;
+  color: #ccc;
+  background-color: black;
+  @media (prefers-color-scheme: light) {
+    color: #333;
+    background-color: white;
+  }
   font: 14px/22px serif, sans-serif;
 }
 
@@ -18,7 +23,10 @@ p, ul, ol, table, pre, dl {
 }
 
 a {
-  color: #333 !important;
+  color: #ccc !important;
+  @media (prefers-color-scheme: light) {
+    color: #333 !important;
+  }
   text-decoration: none;
   &:hover {
     filter: opacity(0.5);
@@ -27,7 +35,10 @@ a {
 }
 
 hr {
-  border-top-color: #cbcbcb;
+  border-top-color: #323232;
+  @media (prefers-color-scheme: light) {
+    border-top-color: #cbcbcb;
+  }
   margin-bottom: 20px;
 }
 
@@ -44,6 +55,10 @@ li {
   background-repeat: no-repeat !important;
   height: 18px;
   width: 18px;
+  filter: invert(1);
+  @media (prefers-color-scheme: light) {
+    filter: invert(0);
+  }
 }
 
 .fa-web {
@@ -76,9 +91,15 @@ li {
 
 header {
   padding: 5px 20px 10px 20px;
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid #323232;
+  @media (prefers-color-scheme: light) {
+    border-bottom: 1px solid #cbcbcb;
+  }
   text-align: center;
-  color: black;
+  color: white;
+  @media (prefers-color-scheme: light) {
+    color: black;
+  }
   margin: 0px 10px !important;
 
   h1 {
@@ -122,7 +143,10 @@ nav {
 
 #area {
   height: calc(100vh - 152px);
-  border: solid white 10px;
+  border: solid black 10px;
+  @media (prefers-color-scheme: light) {
+    border: solid white 10px;
+  }
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
