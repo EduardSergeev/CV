@@ -1,11 +1,12 @@
 ## Summary
+
 * 18 years of .NET/C# (1.0-4.7), .NET Core (2.1-3.1) predominantly server-side development
 * Good knowledge of DBMS/SQL: MSSQL (2000-2017), PostgreSQL
 * Exposure to cloud-based architecture and development: AWS
 * Commercial experience with functional languages: Haskell, Erlang
 * C++ background
-
 ---
+
 ## Experience
 
 ### [Independent Reserve](https://www.independentreserve.com)
@@ -18,8 +19,8 @@ Crypto currency exchange
 As independent contractor participated in addition of new crypto currencies to be traded on exchange: Cardano and Dogecoin so far.
 
 * Haskell (Servant), TypeScrypt, Github (CI/CD), AWS, Docker
-
 ---
+
 ### [Domain Group](https://www.domain.com.au)
 Sydney, Australia  
 **Senior Software Developer**  
@@ -30,8 +31,8 @@ Real estate web portal
 As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from typeahead on public website to geo search used by other services.
 
 * .NET Core 3.1 (C#), ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, Github
-
 ---
+
 ### [Butterfly Systems](https://butterfly.systems)
 Sydney, Australia  
 **Senior Software Developer**  
@@ -48,8 +49,8 @@ Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optim
 Participated in migration of backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
 
 * .NET/C# 4.7, .NET Core 3.1, MSSQL 2017, EF 6.2, EF Core 2.2, ASP.NET MVC/API, AWS (EC2, RDS, S3, SQS, Lambda, SES), Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
-
 ---
+
 ### [Cashrewards](http://www.cashrewards.com.au)
 Sydney, Australia  
 **Senior Software Developer (contractor)**  
@@ -60,8 +61,8 @@ Cashback service for retail customers
 As a full stack developer was responsible for maintenance and development of company website (ASP.NET MVC, HTML, CSS, JavaScript) and internal services (AWS).
 
 * .NET/C# 4.6, MSSQL 2012, ASP.NET MVC, AWS, Bitbucket
-
 ---
+
 ### [Wisetech Global](http://www.wisetechglobal.com)
 Sydney, Australia  
 **Software Developer**  
@@ -72,8 +73,8 @@ Software solutions for logistics industry
 Was software developer in "Customs" and "Accounting" teams (WinForms applications).
 
 * .NET/C# 4.6, WinForms, TFS
-
 ---
+
 ### [Ambiata](https://www.ambiata.com)
 Sydney, Australia  
 **Software Developer**  
@@ -85,8 +86,8 @@ Worked on infrastructure code: mostly Haskell (and Scala) codebase, microservice
 Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end for statistical data storage service.
 
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, Git/Github
-
 ---
+
 ### [Siemens](https://www.siemens.com/au/en/home/products/buildingtechnologies.html)  
 Sydney, Australia  
 **Software Developer (contractor)**  
@@ -98,8 +99,8 @@ Participated in the development of Siemens' next generation of building Access C
 Was responsible for server-side of the project (including DB). Subsequently worked in other areas of the system while project was pushed closer to release: stability, performance, security issues and general bug fixing.
 
 * .NET/C# 4.0, WCF, MSSQL 2008, EF, TPL, Unity, Wix, TFS
-
 ---
+
 ### [Amnesty International](https://www.amnesty.org.au)  
 Sydney, Australia  
 **Senior Software Developer (contractor)**  
@@ -112,8 +113,8 @@ Set up and maintained proper software development environment (source control, C
 Integrated internal CRM system with company website. Implemented payment gateway service working with Westpac banking portal. Implemented synchronisation between internal CRM and Campaign Monitor. Integrated CMS with the external campaign website.
 
 * .NET/C# 4.0, WCF, MSSQL 2008, PHP, Erlang/OTP, git, TeamCity
-
 ---
+
 ### [Barclays Capital](https://en.wikipedia.org/wiki/Barclays_Investment_Bank)
 London, UK  
 **Software Developer (contractor)**  
@@ -125,8 +126,8 @@ Was responsible for support and development of Functional Model Deployment proje
 Worked mostly on improvements and bug-fixing in C# and VBA part of FMD plus minor optimisation and bug fixing in core (C++) FMD; Build support/improvement (TeamCity+NUnit/Boost.Test). Users (quants) 1st line support for QA-Library.
 
 * .NET/C# 3.5, C++, VBA (Excel), Perforce, TeamCity
-
 ---
+
 ### [Credit Suisse](https://en.wikipedia.org/wiki/Credit_Suisse)  
 London, UK  
 **Software Developer (AVP)**  
@@ -151,8 +152,8 @@ Participated in “RiskAgility” project – conversion of the legacy desktop a
 Was responsible for “data & security” part of the platform.  
 
 * .NET/C# 3.5, WCF, LINQ2SQL, MSSQL 2005, Windsor Container(IoC), Rhino Mocks
-
 ---
+
 ### [Symantec](https://www.symantec.com/products/endpoint-management)
 Sydney, Australia  
 **Software Developer**  
@@ -163,8 +164,8 @@ October 2005 – February 2008
 Was a part of Notification Server development team working on Notification Server IT-management solution suite (Assets Management, Patch Management, Inventory etc.). Worked on both, managed (.NET/C#/ASP.NET) NS Server and unmanaged (C++/COM) NS Agent sides.
 
 * .NET/C# 1.1-2.0, MS C++, ASP.NET, MSSQL 2000-2005, MSBuild, Wise, Wix, SVN
-
 ---
+
 ### [CQG International](https://en.wikipedia.org/wiki/CQG)
 Moscow, Russia  
 **Software Developer**  
@@ -175,8 +176,8 @@ Trading software development company
 As a member of Moscow Servers Team participated in the development of server-side components for “New Client” project - the replacement (.NET/C#) for the legacy (C++) platform CQG (complete package of trading software products).
 
 * .NET/C# 1.1, MSSQL 2000, NUnit, NCover, CVS.
-
 ---
+
 ### [R-Style Softlab](https://www.softlab.ru)
 Moscow, Russia  
 **Software Developer**  
@@ -187,8 +188,8 @@ Banking software development company
 Worked on both, older (MS VC++ 6.0) and newer (.NET/C#) codebase.
 
 * .NET/C# 1.0, MS VC++/ATL, MSSQL 2000, Rational XDE, ERWin, NUnit, NDoc, VSS
-
 ---
+
 ## Education
 
 ### [Taganrog State University of Radio Engineering](https://en.wikipedia.org/wiki/Southern_Federal_University)
