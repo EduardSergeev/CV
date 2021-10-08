@@ -19,6 +19,7 @@ As independent contractor participated in addition of new crypto currencies to b
 
 * Haskell (Servant), TypeScrypt, Github (CI/CD), AWS, Docker
 
+---
 ### [Domain Group](https://www.domain.com.au)
 Sydney, Australia  
 **Senior Software Developer**  
