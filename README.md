@@ -8,6 +8,17 @@
 ---
 ## Experience
 
+### [Independent Reserve](https://www.independentreserve.com)
+Sydney, Australia  
+**Software Developer (contractor)**  
+March 2021 - Present
+
+Crypto currency exchange
+
+As independent contractor participated in addition of new crypto currencies to be traded on exchange: Cardano and Dogecoin so far.
+
+* Haskell (Servant), TypeScrypt, Github (CI/CD), AWS, Docker
+
 ### [Domain Group](https://www.domain.com.au)
 Sydney, Australia  
 **Senior Software Developer**  
