@@ -11,12 +11,13 @@ jobs:
       TZ: Australia/Sydney
     steps:
     - uses: actions/checkout@v2
-    - name: Use current date as a version
-      run: echo "VERSION=$(date +%Y.%m.%d)" >> $GITHUB_ENV
-    - run: sudo npm install -g npm@7.7.6
-    - run: npm version ${{ env.VERSION }} --no-git-tag-version
-    - run: npm install
-    - run: npm run build
+    - name: Set project version
+      id: set-version
+      uses: EduardSergeev/project-version-action@v1
+    - name: Build '${{ steps.set-version.outputs.project-version }}'
+      run: |
+        npm install
+        npm run build
     - name: Publish site to a '${{ env.BRANCH }}' branch
       run: |
         git reset --hard
