@@ -12,9 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set project version
-      id: set-version
       uses: EduardSergeev/project-version-action@main
-    - name: Build '${{ steps.set-version.outputs.project-version }}'
+    - name: Build '${{ env.VERSION }}'
       run: |
         npm install
         npm run build
