@@ -6,7 +6,7 @@ $m-height: 550px;
 
 body {
   color: #ccc;
-  background-color: black;
+  background-color: #121212;
   @media (prefers-color-scheme: light) {
     color: #333;
     background-color: white;
@@ -91,12 +91,11 @@ li {
 
 header {
   padding: 5px 20px 10px 20px;
-  border-bottom: 1px solid #323232;
   @media (prefers-color-scheme: light) {
     border-bottom: 1px solid #cbcbcb;
   }
   text-align: center;
-  color: white;
+  color: #ccc;
   @media (prefers-color-scheme: light) {
     color: black;
   }
@@ -143,7 +142,7 @@ nav {
 
 #area {
   height: calc(100vh - 152px);
-  border: solid black 10px;
+  border: solid #121212 10px;
   @media (prefers-color-scheme: light) {
     border: solid white 10px;
   }
