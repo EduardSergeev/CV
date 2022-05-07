@@ -1,9 +1,9 @@
 ## Summary
 
-* 18 years of .NET/C# (1.0-4.7), .NET Core (2.1-3.1) predominantly server-side development
-* Good knowledge of DBMS/SQL: MSSQL (2000-2017), PostgreSQL
-* Exposure to cloud-based architecture and development: AWS
-* Commercial experience with functional languages: Haskell, Erlang
+* C#, .NET Framework 1.0-4.8, .NET (Core) 2.1-6.0
+* Functional programming: Haskell, Erlang
+* DBMS/SQL: MSSQL (2000-2019), PostgreSQL
+* Cloud-based architecture and development: AWS
 * C++ background
 ---
 
@@ -14,11 +14,12 @@ Sydney, Australia
 **Software Developer (contractor)**  
 March 2021 - Present
 
-Crypto currency exchange
+Cryptocurrency exchange
 
-As independent contractor participated in addition of new crypto currencies to be traded on exchange: Cardano and Dogecoin so far.
+Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana.  
+Was responsible for migration of .NET Framework 4.8 code to .NET 6.0 (WCF -> gRPC).
 
-* Haskell (Servant), TypeScrypt, Github (CI/CD), AWS, Docker
+* Haskell/Servant, C#/.NET 6.0, TypeScrypt, Github (CI/CD), AWS, Docker, Windows/Linux
 ---
 
 ### [Domain Group](https://www.domain.com.au)
@@ -30,7 +31,7 @@ Real estate web portal
 
 As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from typeahead on public website to geo search used by other services.
 
-* .NET Core 3.1 (C#), ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, Github
+* C#/.NET Core 3.1, ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, Github
 ---
 
 ### [Butterfly Systems](https://butterfly.systems)
@@ -48,7 +49,7 @@ Set up centralised logging and reporting for all backend services (Cloudwatch, E
 Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optimised site content, included website to CI/CD (Webpack).  
 Participated in migration of backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
 
-* .NET/C# 4.7, .NET Core 3.1, MSSQL 2017, EF 6.2, EF Core 2.2, ASP.NET MVC/API, AWS (EC2, RDS, S3, SQS, Lambda, SES), Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
+* C#, .NET 4.7, .NET Core 3.1, MSSQL 2017, EF 6.2, EF Core 2.2, ASP.NET MVC/API, AWS (EC2, RDS, S3, SQS, Lambda, SES), Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
 ---
 
 ### [Cashrewards](http://www.cashrewards.com.au)
