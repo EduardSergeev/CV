@@ -1,6 +1,6 @@
 ## Summary
 
-* C#, .NET Framework 1.0-4.8, .NET (Core) 2.1-6.0
+* C#, .NET Framework 1.0-4.8, .NET (Core) 2.1-7.0
 * Functional programming: Haskell, Erlang
 * DBMS/SQL: MSSQL (2000-2019), PostgreSQL
 * Cloud-based architecture and development: AWS
@@ -16,10 +16,12 @@ March 2021 - Present
 
 Cryptocurrency exchange
 
-Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana.  
-Was responsible for migration of .NET Framework 4.8 code to .NET 6.0 (WCF -> gRPC).
+Migrated various parts of the system to Docker/Linux;  
+Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana (Haskell/Servant, TypeScript);  
+Added [Order Book Snapshot](https://github.com/independentreserve/websockets/blob/master/orderbook-snapshot.md) interface to IR API (.NET 6 + NetMQ + Docker);  
+Was responsible for migration of legacy .NET Framework 4.8 code to .NET 6.0 with major part being conversion of WCF services to gRPC: implemented [IndependentReserve.Grpc.Tools](https://www.nuget.org/packages/IndependentReserve.Grpc.Tools#readme-body-tab) to simplify the task.
 
-* Haskell/Servant, C#/.NET 6.0, TypeScrypt, Github (CI/CD), AWS, Docker, Windows/Linux
+* C#/.NET 6.0, Haskell, TypeScript, AWS, Docker, Windows/Linux, GitHub + TeamCity (CI/CD)
 ---
 
 ### [Domain Group](https://www.domain.com.au)
@@ -31,7 +33,7 @@ Real estate web portal
 
 As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from typeahead on public website to geo search used by other services.
 
-* C#/.NET Core 3.1, ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, Github
+* C#/.NET Core 3.1, ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, GitHub
 ---
 
 ### [Butterfly Systems](https://butterfly.systems)
