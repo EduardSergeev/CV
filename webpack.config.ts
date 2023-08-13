@@ -29,7 +29,7 @@ const config: ConfigurationFactory = (_env, argv) => ({
       template: './index.html',
       preProcessing: (html: string) => {
         const $ = cheerio.load(html);
-        $('h2,h3').each((_, tag) => {
+        $('h2,h3,h4').each((_, tag) => {
           const id = $(tag).attr('id');
           const name = $(tag).prop('name');
           $('nav ul').append(`
@@ -89,7 +89,7 @@ const config: ConfigurationFactory = (_env, argv) => ({
               '@fullhuman/postcss-purgecss': {
                 content: ['index.html'],
                 safelist: [
-                  'active', 'tag-h2', 'h2', 'h3',
+                  'active', 'tag-h2', 'tag-h4', 'h2', 'h3',
                   'nav-item', 'nav-link', 'collapsing'
                 ]
               }

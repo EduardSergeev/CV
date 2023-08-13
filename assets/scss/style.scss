@@ -119,8 +119,13 @@ nav {
     list-style: none;
 
     .tag-h2 a {
-        font-weight: bold;
-    }   
+      font-weight: bold;
+    }
+
+    .tag-h4 a {
+      font-size: small;
+    }
+
   }
 
   .navbar {
@@ -170,17 +175,17 @@ nav {
 }
 
 
-@media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
-  nav {
-    height: initial;
-    text-align: center;
-  }
+// @media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
+//   nav {
+//     height: initial;
+//     text-align: center;
+//   }
 
-  #area {
-    height: calc(100vh - 50px);
-    max-width: initial;    
-  }
-}
+//   #area {
+//     height: calc(100vh - 50px);
+//     max-width: initial;    
+//   }
+// }
 
 
 @media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) { 
