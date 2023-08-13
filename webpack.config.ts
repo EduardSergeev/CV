@@ -22,10 +22,6 @@ const config: ConfigurationFactory = (_env, argv) => ({
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{
-      from: 'assets/pdf',
-      to: 'assets/pdf'
-    }]),
-    new CopyWebpackPlugin([{
       from: 'CNAME',
       to: '.'
     }]),
