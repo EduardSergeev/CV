@@ -23,7 +23,7 @@ March 2021 - Present
 
 Migrated various parts of the system to Docker/Linux;  
 Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana (Haskell/Servant, TypeScript);  
-Added [Order Book Snapshot](https://github.com/independentreserve/websockets/blob/master/orderbook-snapshot.md) interface to IR API (.NET 6 + NetMQ + Docker);  
+Added [Order Book Snapshot](https://github.com/independentreserve/websockets/blob/bd80b69a378be8bd65d1cf31396e4fcfded0f7b3/orderbook-snapshot.md) interface to IR API (.NET 6 + NetMQ + Docker);  
 Was responsible for migration of legacy .NET Framework 4.8 code to .NET 6.0 with major part being conversion of WCF services to gRPC: implemented [IndependentReserve.Grpc.Tools](https://www.nuget.org/packages/IndependentReserve.Grpc.Tools#readme-body-tab) to simplify the task.
 
 * C#/.NET 6.0-7.0, Haskell, TypeScript, AWS, Docker, Windows/Linux, GitHub + TeamCity (CI/CD)
