@@ -19,7 +19,7 @@ Specialities: Haskell, C#/.NET, TypeScript, Backend/Web/SQL, AWS, Docker, Protob
 #### [Independent Reserve](https://www.independentreserve.com)
 Sydney, Australia  
 **Software Developer (independent contractor)**  
-March 2021 - Present
+March 2021 - January 2024
 
 Migrated various parts of the system to Docker/Linux;  
 Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana (Haskell/Servant, TypeScript);  
@@ -51,7 +51,7 @@ SaaS hospital management systems
 Was responsible for support and development of both backend (.NET 4.7, MSSQl 2017, EF6.2, ASP.NET Web API) hosted on AWS (EC2, RDS, S3, SQS, Lambda, SES) and frontend (ASP.NET MVC, AngularJS, Javascript, HTML, CSS).  
 Set up CI/CD (TeamCity, Octopus), UAT environment, introduced task/issue tracking (Youtrack), integrated with corporate messenger (Slack).  
 Consolidated fragmented source code into monorepository (migrated to Github).  
-Improved/secured AWS insfrastructure (OpenVPN, IAM, VPC, security groups, NAT, Route53).  
+Improved/secured AWS infrastructure (OpenVPN, IAM, VPC, security groups, NAT, Route53).  
 Set up centralised logging and reporting for all backend services (Cloudwatch, Elasticsearch, Kibana, Grafana).  
 Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optimised site content, included website to CI/CD (Webpack).  
 Participated in migration of backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
