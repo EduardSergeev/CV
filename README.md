@@ -19,7 +19,7 @@ Specialities: Haskell, C#/.NET, TypeScript, Backend/Web/SQL, AWS, Docker, Protob
 #### [Independent Reserve](https://www.independentreserve.com)
 Sydney, Australia  
 **Software Developer (independent contractor)**  
-March 2021 - Present
+March 2021 - January 2024
 
 Migrated various parts of the system to Docker/Linux;  
 Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana (Haskell/Servant, TypeScript);  
