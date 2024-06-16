@@ -12,7 +12,7 @@
 ### [Self-employed](https://github.com/EduardSergeev)
 Australia  
 **Freelance Software Developer**  
-March 2021 - Present
+March 2021 - January 2024
 
 Specialities: Haskell, C#/.NET, TypeScript, Backend/Web/SQL, AWS, Docker, Protobuf/gRPC, Linux/Windows 
 
