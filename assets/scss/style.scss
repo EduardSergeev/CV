@@ -65,6 +65,10 @@ li {
   background: url(../images/fontawesome/web.svg);
 }
 
+.fa-at {
+  background: url(../images/fontawesome/at.svg);
+}
+
 .fa-file-pdf {
   background: url(../images/fontawesome/file-pdf.svg);
 }
@@ -108,7 +112,11 @@ header {
   p, address {
     margin: auto;
     font-size: 18px
-  }  
+  }
+
+  p.icons a {
+    text-decoration: none;
+  }
 }
 
 nav {
