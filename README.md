@@ -14,7 +14,7 @@ Australia
 **Freelance Software Developer**  
 March 2021 - January 2024
 
-Specialities: Haskell, C#/.NET, TypeScript, Backend/Web/SQL, AWS, Docker, Protobuf/gRPC, Linux/Windows 
+Specialities: Haskell, C#/.NET, TypeScript, Backend/Web/SQL, AWS, Docker, gRPC, Linux/Windows 
 
 #### [Independent Reserve](https://www.independentreserve.com)
 Sydney, Australia  
@@ -24,9 +24,9 @@ March 2021 - January 2024
 Migrated various parts of the system to Docker/Linux;  
 Participated in addition of new cryptocurrency listings: Cardano, Dogecoin, Solana (Haskell/Servant, TypeScript);  
 Added [Order Book Snapshot](https://github.com/independentreserve/websockets/blob/bd80b69a378be8bd65d1cf31396e4fcfded0f7b3/orderbook-snapshot.md) interface to IR API (.NET 6 + NetMQ + Docker);  
-Was responsible for migration of legacy .NET Framework 4.8 code to .NET 6.0 with major part being conversion of WCF services to gRPC: implemented [IndependentReserve.Grpc.Tools](https://www.nuget.org/packages/IndependentReserve.Grpc.Tools#readme-body-tab) to simplify the task.
+Was responsible for migration of the legacy .NET Framework 4.8 server-side code (WCF, ASP.NET, ASP.NET Web API + MSSQL) to .NET 6.0/8.0 hosted on Linux with the major part being conversion of WCF services to gRPC: implemented [IndependentReserve.Grpc.Tools](https://www.nuget.org/packages/IndependentReserve.Grpc.Tools#readme-body-tab) to simplify this task.
 
-* C#/.NET 6.0-8.0, Haskell, TypeScript, AWS, Docker, Windows/Linux, GitHub + TeamCity (CI/CD)
+* C#/.NET 6.0-8.0, ASP.NET Core, gRPC, Haskell, TypeScript, AWS, Docker, Windows/Linux, GitHub + TeamCity (CI/CD)
 ---
 
 ### [Domain Group](https://www.domain.com.au)
@@ -36,7 +36,7 @@ October 2020 - November 2020
 
 Real estate web portal
 
-As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from typeahead on public website to geo search used by other services.
+As a member of Search Team was responsible for development and support of backend services which provided realtime search functionality for property listings: from type-ahead on public website to geo search used by other services.
 
 * C#/.NET Core 3.1, ElasticSearch, AWS (ECS, SQS, S3), Teamcity, Octopus Deploy, Docker, GitHub
 ---
@@ -50,11 +50,11 @@ SaaS hospital management systems
 
 Was responsible for support and development of both backend (.NET 4.7, MSSQl 2017, EF6.2, ASP.NET Web API) hosted on AWS (EC2, RDS, S3, SQS, Lambda, SES) and frontend (ASP.NET MVC, AngularJS, Javascript, HTML, CSS).  
 Set up CI/CD (TeamCity, Octopus), UAT environment, introduced task/issue tracking (Youtrack), integrated with corporate messenger (Slack).  
-Consolidated fragmented source code into monorepository (migrated to Github).  
+Consolidated fragmented source code into monorepo (migrated to GitHub).  
 Improved/secured AWS infrastructure (OpenVPN, IAM, VPC, security groups, NAT, Route53).  
 Set up centralised logging and reporting for all backend services (Cloudwatch, Elasticsearch, Kibana, Grafana).  
 Improved corporate website: moved it to AWS (S3, CloudFront, Lambda, SES), optimised site content, included website to CI/CD (Webpack).  
-Participated in migration of backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
+Participated in migration of the backend code from .NET 4.7 on Windows to .NET Core 3.1 on Linux in Docker.
 
 * C#, .NET 4.7, .NET Core 3.1, MSSQL 2017, EF 6.2, EF Core 2.2, ASP.NET MVC/API, AWS (EC2, RDS, S3, SQS, Lambda, SES), Git/Github, Teamcity, Octopus, Elasticsearch, Docker, Windows/Linux
 ---
@@ -91,7 +91,7 @@ June 2015 - August 2016
 Big data analytics - massive-scale personalised marketing service
 
 Worked on infrastructure code: mostly Haskell (and Scala) codebase, microservices architecture, cloud-based deployment (AWS).  
-Was responsible mostly for RDS-related services: declarative DB deployment and management service, back-end for statistical data storage service.
+Was responsible for RDS-related services: declarative DB deployment and management service, back-end for statistical data storage service.
 
 * Haskell, AWS (EC2, S3, RDS), PostgreSQL, Linux, Git/Github
 ---
@@ -116,7 +116,7 @@ May 2011 – October 2012
 
 Non-governmental organisation focused on human rights
 
-Worked on modernisation of the IT (software) infrastructure  
+Worked on modernisation of the IT infrastructure  
 Set up and maintained proper software development environment (source control, CI, TDD)  
 Integrated internal CRM system with company website. Implemented payment gateway service working with Westpac banking portal. Implemented synchronisation between internal CRM and Campaign Monitor. Integrated CMS with the external campaign website.
 
@@ -181,7 +181,7 @@ January 2005 – September 2005
 
 Trading software development company
 
-As a member of Moscow Servers Team participated in the development of server-side components for “New Client” project - the replacement (.NET/C#) for the legacy (C++) platform CQG (complete package of trading software products).
+As a member of Moscow Servers Team participated in development of server-side components for “New Client” project - a replacement (.NET/C#) for the legacy (C++) platform CQG (complete package of trading software products).
 
 * .NET/C# 1.1, MSSQL 2000, NUnit, NCover, CVS.
 ---
