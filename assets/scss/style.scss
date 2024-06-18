@@ -176,7 +176,8 @@ nav {
         }
       }
 
-      .nav-link:hover {
+      .nav-link:hover,
+      .nav-link:focus {
           color: inherit;
       }
 
