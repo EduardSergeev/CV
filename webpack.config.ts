@@ -89,7 +89,8 @@ const config: ConfigurationFactory = (_env, argv) => ({
               '@fullhuman/postcss-purgecss': {
                 content: ['index.html'],
                 safelist: [
-                  'active', 'tag-h2', 'tag-h4', 'h2', 'h3',
+                  'active', 'tag-h2', 'tag-h3', 'tag-h4',
+                  'h2', 'h3', 'h4',
                   'nav-item', 'nav-link', 'collapsing'
                 ]
               }

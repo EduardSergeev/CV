@@ -4,12 +4,27 @@
 $m-width: "md";
 $m-height: 550px;
 
+$color-dark: #bfbfbf;
+$color-light: #333;
+
+$background-color-dark: #121212;
+$background-color-light: white;
+
+$link-color-dark: #eee;
+$link-color-light: #111;
+
+$nav-link-color-dark: #ccc;
+$nav-link-color-light: #333;
+
+$border-color-dark: #323232;
+$border-color-light: #cbcbcb;
+
 body {
-  color: #ccc;
-  background-color: #121212;
+  color: $color-dark;
+  background-color: $background-color-dark;
   @media (prefers-color-scheme: light) {
-    color: #333;
-    background-color: white;
+    color: $color-light;
+    background-color: $background-color-light;
   }
   font: 14px/22px serif, sans-serif;
 }
@@ -18,26 +33,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 
+h3 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
 p, ul, ol, table, pre, dl {
   margin: 0 0 20px;
 }
 
 a {
-  color: #ccc !important;
+  color: $link-color-dark;
   @media (prefers-color-scheme: light) {
-    color: #333 !important;
+    color: $link-color-light;
+    font-weight: bolder;
   }
   text-decoration: none;
   &:hover {
+    color: inherit;
     filter: opacity(0.5);
-    text-decoration: none;
   }
 }
 
 hr {
-  border-top-color: #323232;
+  border-top-color: $border-color-dark;
   @media (prefers-color-scheme: light) {
-    border-top-color: #cbcbcb;
+    border-top-color: $border-color-light;
   }
   margin-bottom: 20px;
 }
@@ -63,6 +89,10 @@ li {
 
 .fa-web {
   background: url(../images/fontawesome/web.svg);
+}
+
+.fa-at {
+  background: url(../images/fontawesome/at.svg);
 }
 
 .fa-file-pdf {
@@ -91,15 +121,12 @@ li {
 
 header {
   padding: 5px 20px 10px 20px;
-  @media (prefers-color-scheme: light) {
-    border-bottom: 1px solid #cbcbcb;
-  }
+  margin: 0px 10px;
   text-align: center;
-  color: #ccc;
+  color: $color-dark;
   @media (prefers-color-scheme: light) {
-    color: black;
+    color: $color-light;
   }
-  margin: 0px 10px !important;
 
   h1 {
     margin: auto;
@@ -108,7 +135,11 @@ header {
   p, address {
     margin: auto;
     font-size: 18px
-  }  
+  }
+
+  .icons a {
+    text-decoration: none;
+  }
 }
 
 nav {
@@ -122,24 +153,41 @@ nav {
       font-weight: bold;
     }
 
+    .tag-h3 a {
+      font-weight: normal;
+    }
+
     .tag-h4 a {
-      font-size: small;
+      font-size: smaller;
+      font-weight: lighter;
     }
 
   }
 
   .navbar {
     padding: 0px 10px 10px 0px;
-  }
 
-  .active {
-    text-decoration: underline !important;
+    .navbar-nav {
+      .nav-link {
+        padding: .1rem 1rem;
+        color: $nav-link-color-dark;
+        @media (prefers-color-scheme: light) {
+          color: $nav-link-color-light;
+        }
+      }
+
+      .nav-link:hover {
+          color: inherit;
+      }
+
+      .nav-link.active {
+          color: inherit;
+          text-decoration: underline;
+      }
+    }
   }
 }
 
-.nav-link {
-  padding: .1rem 1rem;
-}
 
 #view {
   padding: 0px;
@@ -147,9 +195,9 @@ nav {
 
 #area {
   height: calc(100vh - 152px);
-  border: solid #121212 10px;
+  border: solid $background-color-dark 10px;
   @media (prefers-color-scheme: light) {
-    border: solid white 10px;
+    border: solid $background-color-light 10px;
   }
   max-width: 1140px;
   margin-left: auto;
@@ -175,19 +223,6 @@ nav {
 }
 
 
-// @media (max-width: map-get($grid-breakpoints, $m-width) - 0.02), (max-height: $m-height - 0.02) {
-//   nav {
-//     height: initial;
-//     text-align: center;
-//   }
-
-//   #area {
-//     height: calc(100vh - 50px);
-//     max-width: initial;    
-//   }
-// }
-
-
 @media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) { 
   header {
     display: block !important;
@@ -196,15 +231,20 @@ nav {
 
 
 @media print {
-  a:not(.btn) {
-    text-decoration: none;
-
-  }
-
-  header {
+  header.row {
     display: block;
     text-align: left;
-    padding-bottom: 40px;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid $border-color-light;
+    margin: 30px;
+
+    div.header {
+      padding: 0;
+
+      address {
+        margin-top: 10px;
+      }
+    }
   }
 
   nav {
