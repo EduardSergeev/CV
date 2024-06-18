@@ -118,10 +118,9 @@ const config: ConfigurationFactory = (_env, argv) => ({
       }]
     }, {
       test: /\.svg$/,
-      loader: 'svg-url-loader',
+      loader: 'url-loader',
       options: {
-        limit: 8192,
-        noquotes: true
+        limit: 8192
       }
     }, {
       test: argv.mode === 'production' ? /\.(jpg|png|gif|svg)$/ : /.^/,
