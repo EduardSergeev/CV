@@ -165,7 +165,13 @@ nav {
       font-size: smaller;
       font-weight: lighter;
     }
+  }
 
+  .navbar-toggler {
+    filter: invert(1);
+    @media (prefers-color-scheme: light) {
+      filter: invert(0);
+    }
   }
 
   .navbar {
@@ -205,8 +211,6 @@ nav {
     border: solid $background-color-light 10px;
   }
   max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -227,6 +231,17 @@ nav {
     display: none;
 }
 
+@media (max-width: (map-get($grid-breakpoints, $m-width) - 0.001)), (max-height: ($m-height - 0.001)) {
+  nav {
+    height: initial;
+    text-align: center;
+  }
+
+  #area {
+    height: calc(100vh - 3rem);
+    max-width: initial;    
+  }
+}
 
 @media (min-width: map-get($grid-breakpoints, $m-width)) and (min-height: $m-height) { 
   header {
