@@ -136,9 +136,10 @@ header {
     margin: auto;
   }
 
-  p, address {
+  address {
     margin: auto;
-    font-size: 18px
+    font-size: 18px;
+    padding-bottom: 10px;
   }
 
   .icons a {
@@ -264,7 +265,7 @@ nav {
       padding: 0;
 
       address {
-        margin-top: 10px;
+        margin-top: 5px;
       }
     }
   }
